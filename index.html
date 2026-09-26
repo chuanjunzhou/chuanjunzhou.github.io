@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chuanjun Zhou</title>
+<meta name="description" content="Chuanjun “Thompson” Zhou, undergraduate researcher at UC Berkeley working on learning under imperfect supervision. Site arriving October 2026.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    color-scheme:dark;
+    --bg:#0a0908; --ink:#f0ebe2; --mute:#9a948a; --dim:#6b665e; --line:#26231f; --rim:#e6c98a;
+    --serif:"Newsreader",Georgia,"Times New Roman",serif;
+    --mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;overflow-x:clip;background:var(--bg);color:var(--ink);font-family:var(--serif);
+       display:flex;flex-direction:column;min-height:100%;padding-inline:clamp(16px,5vw,48px)}
+  header,footer{max-width:100%;overflow-wrap:anywhere;display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+       padding-block:22px;font:12.5px/1.4 var(--mono);color:var(--mute)}
+  header{border-bottom:1px solid var(--line)} footer{border-top:1px solid var(--line);margin-top:auto}
+  header b{color:var(--ink);font-weight:500}
+  main{flex:1;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+       text-align:center;padding-block:clamp(48px,10vh,120px)}
+  .mark{position:relative;width:96px;height:96px;margin-bottom:clamp(28px,5vh,48px)}
+  .mark i{position:absolute;inset:0;border:1px solid var(--rim);border-radius:50%;opacity:.85}
+  .mark i:nth-child(1){transform:rotateX(70deg)}
+  .mark i:nth-child(2){transform:rotateY(64deg) rotateX(20deg);opacity:.55}
+  .mark i:nth-child(3){transform:rotate(-34.8deg) rotateY(72deg);opacity:.7}
+  .mark s{position:absolute;left:50%;top:-6px;width:1px;height:108px;background:var(--rim);
+       transform:rotate(-34.8deg);transform-origin:50% 50%;opacity:.6}
+  .mark u{position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:var(--rim)}
+  h1{font-weight:400;font-size:clamp(38px,7vw,76px);line-height:1.05;letter-spacing:-.01em;margin:0 0 20px;text-wrap:balance}
+  h1 em{font-style:italic;color:var(--rim)}
+  p{max-width:min(34em,100%);margin:0;font-size:clamp(17px,1.6vw,20px);line-height:1.55;color:var(--mute)}
+  p b{color:var(--ink);font-weight:400}
+  .meta{margin-top:clamp(28px,5vh,44px);font:12.5px/1.8 var(--mono);color:var(--dim);letter-spacing:.06em;text-transform:uppercase}
+  .links{margin-top:14px;font:14px/1.8 var(--mono);display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;max-width:100%;overflow-wrap:anywhere}
+  .links a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+  .links a:hover,.links a:focus-visible{border-bottom-color:var(--rim);outline:none}
+  .links span{color:var(--dim);margin:0 10px}
+  @media (prefers-reduced-motion:no-preference){.mark i:nth-child(3){animation:turn 60s linear infinite}
+    @keyframes turn{to{transform:rotate(-34.8deg) rotateY(432deg)}}}
+  @media (max-width:520px){header,footer{flex-direction:column;gap:4px}}
+</style>
+</head>
+<body>
+<header><b>Thompson Zhou</b><span>Berkeley, CA</span></header>
+<main>
+  <div class="mark" aria-hidden="true"><i></i><i></i><i></i><s></s><u></u></div>
+  <h1>Chuanjun <em>“Thompson”</em> Zhou</h1>
+  <p>Undergraduate researcher at UC Berkeley. I work on <b>learning under imperfect supervision</b>: what happens when the labels you have are a lossy, biased observation of the thing you actually want to learn.</p>
+  <div class="meta">Site arriving October 2026</div>
+  <div class="links"><a href="mailto:chuanjunzhou@berkeley.edu">chuanjunzhou@berkeley.edu</a><span>·</span><a href="https://github.com/chuanjunzhou">github.com/chuanjunzhou</a></div>
+</main>
+<footer><span>No analytics.</span><span>渾儀 hunyi, n. the Chinese armillary sphere.</span></footer>
+</body>
+</html>
