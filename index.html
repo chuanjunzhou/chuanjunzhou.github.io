@@ -3,57 +3,1517 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Chuanjun Zhou</title>
-<meta name="description" content="Chuanjun “Thompson” Zhou, undergraduate researcher at UC Berkeley working on learning under imperfect supervision. Site arriving October 2026.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<meta name="description" content="Undergraduate researcher at UC Berkeley working on learning under imperfect supervision.">
+<title>Chuanjun “Thompson” Zhou</title>
+<link rel="canonical" href="https://chuanjunzhou.ai/">
+<meta property="og:title" content="Chuanjun “Thompson” Zhou">
+<meta property="og:description" content="Undergraduate researcher at UC Berkeley working on learning under imperfect supervision.">
+<meta property="og:url" content="https://chuanjunzhou.ai/">
+<meta property="og:type" content="profile">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f2ea">
+<meta name="theme-color" content="#070706">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%23e6c98a' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='16' cy='16' r='12.5'/%3E%3Cellipse cx='16' cy='16' rx='12.5' ry='4.8' transform='rotate(-24 16 16)'/%3E%3Cellipse cx='16' cy='16' rx='4.8' ry='12.5' transform='rotate(-24 16 16)'/%3E%3Cpath d='M10.7 4.1 21.3 27.9'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='2.2' fill='%23e6c98a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500&display=swap">
 <style>
-  :root{
-    color-scheme:dark;
-    --bg:#0a0908; --ink:#f0ebe2; --mute:#9a948a; --dim:#6b665e; --line:#26231f; --rim:#e6c98a;
-    --serif:"Newsreader",Georgia,"Times New Roman",serif;
-    --mono:"IBM Plex Mono","SF Mono",Menlo,Consolas,monospace;
-  }
-  *{box-sizing:border-box}
-  html,body{height:100%}
-  body{margin:0;overflow-x:clip;background:var(--bg);color:var(--ink);font-family:var(--serif);
-       display:flex;flex-direction:column;min-height:100%;padding-inline:clamp(16px,5vw,48px)}
-  header,footer{max-width:100%;overflow-wrap:anywhere;display:flex;justify-content:space-between;align-items:baseline;gap:16px;
-       padding-block:22px;font:12.5px/1.4 var(--mono);color:var(--mute)}
-  header{border-bottom:1px solid var(--line)} footer{border-top:1px solid var(--line);margin-top:auto}
-  header b{color:var(--ink);font-weight:500}
-  main{flex:1;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;
-       text-align:center;padding-block:clamp(48px,10vh,120px)}
-  .mark{position:relative;width:96px;height:96px;margin-bottom:clamp(28px,5vh,48px)}
-  .mark i{position:absolute;inset:0;border:1px solid var(--rim);border-radius:50%;opacity:.85}
-  .mark i:nth-child(1){transform:rotateX(70deg)}
-  .mark i:nth-child(2){transform:rotateY(64deg) rotateX(20deg);opacity:.55}
-  .mark i:nth-child(3){transform:rotate(-34.8deg) rotateY(72deg);opacity:.7}
-  .mark s{position:absolute;left:50%;top:-6px;width:1px;height:108px;background:var(--rim);
-       transform:rotate(-34.8deg);transform-origin:50% 50%;opacity:.6}
-  .mark u{position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px;border-radius:50%;background:var(--rim)}
-  h1{font-weight:400;font-size:clamp(38px,7vw,76px);line-height:1.05;letter-spacing:-.01em;margin:0 0 20px;text-wrap:balance}
-  h1 em{font-style:italic;color:var(--rim);margin-left:-.12em;margin-right:.10em}
-  p{max-width:min(34em,100%);margin:0;font-size:clamp(17px,1.6vw,20px);line-height:1.55;color:var(--mute)}
-  p b{color:var(--ink);font-weight:400}
-  .meta{margin-top:clamp(28px,5vh,44px);font:12.5px/1.8 var(--mono);color:var(--dim);letter-spacing:.06em;text-transform:uppercase}
-  .links{margin-top:14px;font:14px/1.8 var(--mono);display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;max-width:100%;overflow-wrap:anywhere}
-  .links a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
-  .links a:hover,.links a:focus-visible{border-bottom-color:var(--rim);outline:none}
-  .links span{color:var(--dim);margin:0 10px}
-  @media (prefers-reduced-motion:no-preference){.mark i:nth-child(3){animation:turn 60s linear infinite}
-    @keyframes turn{to{transform:rotate(-34.8deg) rotateY(432deg)}}}
-  @media (max-width:520px){header,footer{flex-direction:column;gap:4px}}
+/* =====================================================================
+   ARMILLARY 渾儀. One Chinese armillary sphere in the Taiping Hunyi /
+   Su Song line, drawn on one canvas: three nests of graduated rings on a
+   polar axis tilted to Berkeley's latitude, a sighting tube (望筒) in the
+   inner double ring, two posts down to a ground line, and in Bronze one
+   pool of lamplight on the floor beside it. The sighting tube turns about
+   the centre, so every line of sight passes through it; that point is
+   where the hun tian model puts the earth (the yolk inside the egg), and
+   where the portrait sits, a duotone in the material.
+   The middle nest turns at the sidereal rate from Berkeley local time,
+   like the clockwork sphere on Su Song's tower, and carries the sun at
+   today's longitude on the ecliptic ring. Three materials, one geometry:
+     Bronze 青銅       (data-mode="night")  the cast instrument under a lamp
+     Woodcut 刻本      (data-mode="day")    the same sphere as a double-line ink drawing
+     Rose paper 薛濤箋 (data-mode="rose")   the same woodcut printed on pink paper
+   The data-mode keys night/day/rose are fixed by the brief and the viewer
+   harness (they are storage keys, not names); every visible name is the
+   material. Every colour is a token on :root (Bronze), redefined in full
+   per mode.
+   ===================================================================== */
+
+/* ===== TOKENS: BRONZE 青銅 (data-mode="night", the default) ===== */
+:root {
+  color-scheme: dark;
+  --bg: #070706;
+  --ink: #f1ede4;           /* 17.2:1 */
+  --mute: #9b978e;          /* 6.9:1 labels */
+  --mute-strong: #a29e95;   /* 7.5:1 body */
+  --dim: #7e7a71;
+  --line: #1f1e1b;
+  --line-strong: #35332e;
+  --control-line: #5f5c55;
+  --accent: #d8b26e;        /* 10.1:1: links, active nav */
+  --wash: rgba(216,178,110,.05);
+  --glass: rgba(7,7,6,.78);
+  --scrim: rgba(0,0,0,.62);
+  --pill-hover: inset 0 1px 0 rgba(216,178,110,.55);   /* a lit top edge */
+  --seal-bg: transparent; --seal-ink: #d8b26e; --seal-line: #5f5c55;
+  /* the object */
+  --ar-band: #3b3022; --ar-band-dark: #241d14;
+  --ar-rim: #d8b26e;
+  --ar-ink: #d8b26e;                 /* line colour where the woodcut themes use ink; unused at night except the fallback */
+  --ar-back: rgba(216,178,110,.32);   /* the far halves, strong enough to close the sphere */
+  --ar-tick: #c9a96a; --ar-axis: #8a7148; --ar-hot: #f3e0b3;
+  --ar-ground: #35332e;
+  --ar-lamp: rgba(243,224,179,.06);   /* lamplight on the floor; night only */
+  /* the portrait at the centre, a duotone: the photo's shadows go to --pt-shadow and its highlights to --pt-light (result = lerp(shadow × light, light, luminance)); Bronze alone then lifts the lamp side by at most 12% white; --pt-rim is the plate's edge */
+  --pt-shadow: #241d14; --pt-light: #c49a5c; --pt-lift: .12; --pt-rim: #d8b26e;
+  --grain-a: 0;                       /* paper tooth: a fixed page overlay, none at night */
+  /* the three switch marks each show their own material whatever the page's mode, so these never change with it */
+  --sw-bronze-bg: #070706; --sw-bronze-line: #d8b26e; --sw-bronze-pivot: #f3e0b3;
+  --sw-woodcut-bg: #f6f2ea; --sw-woodcut-line: #1f1b17; --sw-woodcut-pivot: #a4362a;
+  --sw-rose-bg: #fae5ec; --sw-rose-line: #4a2536; --sw-rose-pivot: #b8235a;
+
+  --display: "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --body: "DM Sans", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
+  --cjk: "Noto Serif TC", "Songti TC", "Songti SC", SimSun, "PingFang TC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", serif;
+
+  --radius: 18px;
+  --pad: clamp(16px, 5vw, 48px);
+  --section: clamp(88px, 12vw, 160px);
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
+
+/* ===== TOKENS: WOODCUT 刻本 (data-mode="day") ===== */
+:root[data-mode="day"] {
+  color-scheme: light;
+  --bg: #f6f2ea;
+  --ink: #17140f;           /* 16.4:1 */
+  --mute: #625d54;          /* 5.9:1 */
+  --mute-strong: #4c4740;   /* 8.2:1 */
+  --dim: #6b665d;
+  --line: #dcd6c9;
+  --line-strong: #c5bdad;
+  --control-line: #8a8272;  /* 3.4:1 */
+  --accent: #1f1b17;        /* day has no colour in text; cinnabar lives only on the object and the seal */
+  --wash: rgba(31,27,23,.035);
+  --glass: rgba(246,242,234,.8);
+  --scrim: rgba(23,20,15,.38);
+  --pill-hover: inset 0 -1px 0 #1f1b17;                /* an ink under-rule */
+  --seal-bg: #a4362a; --seal-ink: #f6f2ea; --seal-line: #a4362a;
+  --ar-band: #1f1b17; --ar-band-dark: #1f1b17;
+  --ar-rim: #1f1b17;
+  --ar-ink: #1f1b17;
+  --ar-back: rgba(31,27,23,.38);
+  --ar-tick: #1f1b17; --ar-axis: #1f1b17; --ar-hot: #a4362a;
+  --ar-ground: #c5bdad;
+  --ar-lamp: transparent;   /* no bloom on paper: light only touches edges */
+  --pt-shadow: #1f1b17; --pt-light: #f6f2ea; --pt-lift: 0; --pt-rim: #1f1b17;   /* ink to paper: the highlights are the bare sheet, the shadows the ink, no lift; rimmed by the woodcut's double line */
+  --grain-a: .05;
+}
+
+/* ===== TOKENS: ROSE PAPER 薛濤箋 (data-mode="rose") ===== */
+:root[data-mode="rose"] {
+  color-scheme: light;
+  --bg: #fae5ec;
+  --ink: #3b1e2a;           /* 12.4:1 */
+  --mute: #7a5364;          /* 5.4:1 */
+  --mute-strong: #653f4e;   /* 7.4:1 */
+  --dim: #7a5364;
+  --line: #edc9d6;
+  --line-strong: #dfb0c3;
+  --control-line: #a86a86;  /* 3.4:1 */
+  --accent: #b8235a;        /* 5.1:1: links, active nav, active theme mark; never body text */
+  --wash: rgba(184,35,90,.05);
+  --glass: rgba(250,229,236,.82);
+  --scrim: rgba(59,30,42,.42);
+  --pill-hover: inset 0 -1px 0 #b8235a;
+  --seal-bg: #b8235a; --seal-ink: #fae5ec; --seal-line: #b8235a;
+  --ar-band: #4a2536; --ar-band-dark: #4a2536;
+  --ar-rim: #4a2536;
+  --ar-ink: #4a2536;        /* 10.9:1 */
+  --ar-back: rgba(74,37,54,.38);
+  --ar-tick: #4a2536; --ar-axis: #4a2536; --ar-hot: #b8235a;
+  --ar-ground: #dfb0c3;
+  --ar-lamp: transparent;
+  --pt-shadow: #4a2536; --pt-light: #fae5ec; --pt-lift: 0; --pt-rim: #4a2536;   /* rose-charcoal ink to pink paper: a true duotone, no lift; rimmed like the rings */
+  --grain-a: .05;
+}
+
+/* Theme transition: 250 ms on colour only */
+:root.theming body, :root.theming .top, :root.theming .pill, :root.theming .pub, :root.theming .chips li, :root.theming .sheet-card,
+:root.theming h1, :root.theming h2, :root.theming h3, :root.theming p, :root.theming a, :root.theming span, :root.theming li, :root.theming .seal {
+  transition: background-color .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+}
+
+/* ===== RESET / BASE ===== */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; background: var(--bg); }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; font-weight: 400; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+/* Paper tooth for the two paper themes: one faint noise overlay fixed over the whole page, so the tooth has no edge anywhere and the stage stays transparent */
+body::after { content: ""; display: none; position: fixed; inset: 0; z-index: 200; pointer-events: none; opacity: var(--grain-a); background: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E") repeat; background-size: 160px 160px; }
+:root[data-mode="day"] body::after, :root[data-mode="rose"] body::after { display: block; }
+h1 { font-family: var(--display); font-weight: 400; margin: 0; text-wrap: balance; font-variation-settings: "opsz" 72; }
+h2 { font-family: var(--display); font-weight: 400; font-size: 30px; line-height: 1.15; margin: 0; text-wrap: balance; }
+h3 { font-family: var(--body); font-weight: 500; letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+code { font-family: var(--mono); font-size: .92em; }
+.wrap { max-width: 1120px; margin-inline: auto; padding-inline: var(--pad); }
+.mono { font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; color: var(--mute); font-variant-numeric: tabular-nums; }
+.mono.cap { font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; }
+.nb { white-space: nowrap; }   /* a name, a relation or a dated phrase that never breaks across lines */
+.cjk { font-family: var(--cjk); font-weight: 400; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Bullets are graduation ticks, 1 x 7 px; dates carry the same tick, so dates read as readings */
+.ticks li { position: relative; padding-left: 18px; }
+.ticks li::before { content: ""; position: absolute; left: 0; top: .55em; width: 1px; height: 7px; background: var(--line-strong); }
+.date { position: relative; padding-left: 10px; }
+.date::before { content: ""; position: absolute; left: 0; top: .5em; width: 1px; height: 7px; background: var(--line-strong); }
+
+/* Pills: no glow; a lit top edge in Bronze, an ink under-rule on paper */
+.pill { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding-inline: 18px; border: 1px solid var(--line-strong); border-radius: 999px; font-family: var(--body); font-size: 13.5px; font-weight: 500; letter-spacing: .01em; color: var(--ink); white-space: nowrap; background: var(--bg); transition: border-color .25s var(--ease), background-color .25s var(--ease), box-shadow .25s var(--ease); }
+.pill:hover { color: var(--ink); background: var(--wash); box-shadow: var(--pill-hover); }
+.pill .arrow { color: var(--mute); font-size: 12px; }
+.pill:hover .arrow { color: var(--ink); }
+.pill.todo { color: var(--mute); border-style: dashed; cursor: default; }
+.pill.todo:hover { background: var(--bg); box-shadow: none; }
+
+/* ===== NAV ===== */
+.top { position: sticky; top: 0; z-index: 20; background: var(--glass); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.nav { display: flex; align-items: center; gap: 14px; height: 72px; min-width: 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 19px; line-height: 1; white-space: nowrap; }
+.brand .sep { display: inline-block; width: 9px; height: 6px; border: 1px solid var(--accent); border-radius: 50%; }   /* one small projected ring */
+.brand span.where { color: var(--mute); font-family: var(--body); font-size: 13.5px; }
+.nav-links { display: flex; gap: 20px; align-items: center; margin-left: auto; }
+.nav-links a { font-size: 13.5px; color: var(--mute); transition: color .2s; }
+.nav-links a:hover, .nav-links a[aria-current] { color: var(--accent); }
+.nav-mail { font-family: var(--mono); font-size: 12.5px; color: var(--mute); }
+.nav-mail:hover { color: var(--accent); }
+.menu-btn { display: none; height: 40px; padding-inline: 14px; border: 1px solid var(--line-strong); border-radius: 999px; font-size: 13px; }
+
+/* Theme switch: three marks of two crossed rings on that theme's own ground, each a 40px target; the active one shows its pivot in the theme's accent. Only the current theme carries its name (English and characters) so the switch stays narrow at every width; the other two are named by their title and hidden text. */
+.switch { display: inline-flex; align-items: center; gap: 2px; height: 40px; }
+.switch [role="radio"] { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 40px; height: 40px; padding: 0 5px; border-radius: 6px; font-size: 12.5px; color: var(--mute); transition: color .2s, background-color .2s; }
+.switch [role="radio"]:hover { color: var(--ink); background: var(--wash); }
+.switch [role="radio"][aria-checked="true"] { color: var(--ink); }
+.switch [role="radio"]:focus-visible { outline-offset: 0; }
+.sw-mark { position: relative; flex: none; width: 20px; height: 14px; border: 1px solid var(--control-line); border-radius: 3px; background: var(--g); }
+.sw-mark b { position: absolute; left: 50%; top: 50%; border: 1px solid var(--l); border-radius: 50%; }
+.sw-mark .ra { width: 14px; height: 6px; margin: -3px 0 0 -7px; transform: rotate(-18deg); }
+.sw-mark .rb { width: 6px; height: 12px; margin: -6px 0 0 -3px; transform: rotate(22deg); }
+.sw-mark .pv { width: 3px; height: 3px; margin: -1.5px 0 0 -1.5px; border: 0; background: var(--p); opacity: 0; transition: opacity .2s; }
+[aria-checked="true"] .sw-mark .pv { opacity: 1; }
+.sw-bronze { --g: var(--sw-bronze-bg); --l: var(--sw-bronze-line); --p: var(--sw-bronze-pivot); }
+.sw-woodcut { --g: var(--sw-woodcut-bg); --l: var(--sw-woodcut-line); --p: var(--sw-woodcut-pivot); }
+.sw-rose { --g: var(--sw-rose-bg); --l: var(--sw-rose-line); --p: var(--sw-rose-pivot); }
+.sw-lab { display: none; white-space: nowrap; }
+[aria-checked="true"] .sw-lab { display: inline; }
+.sw-lab .cjk { font-size: 12.5px; color: var(--mute); margin-left: 4px; }
+[aria-checked="true"] .sw-lab .cjk { color: var(--accent); }
+/* The nav fits its wrap at every width: the email leaves first (it is in the hero pills and the footer), then the links fold behind Menu */
+@media (max-width: 1180px) { .nav-mail { display: none; } }
+@media (max-width: 960px) {
+  .nav { flex-wrap: wrap; }
+  .switch { margin-left: auto; }
+  .menu-btn { display: inline-flex; align-items: center; gap: 6px; }
+  .nav-links { display: none; flex-direction: column; align-items: flex-start; gap: 4px; width: 100%; padding: 8px 0 18px; border-top: 1px solid var(--line); margin-left: 0; }
+  .nav-links a { font-size: 17px; padding: 8px 0; }
+  .nav.open .nav-links { display: flex; }
+  .nav.open { height: auto; }
+}
+@media (max-width: 720px) {
+  .nav { height: 64px; gap: 10px; }
+  .brand span.where, .brand .sep { display: none; }
+  .brand { font-size: 18px; }
+  .switch { gap: 0; }
+  .switch [role="radio"] { min-width: 36px; padding: 0 4px; }
+  .sw-lab .cjk { display: none; }   /* the English name alone on a phone; the characters stay in the title and hidden text */
+}
+@media (max-width: 480px) {
+  .nav { gap: 8px; }
+  .brand { font-size: 17px; }
+  .switch [role="radio"] { min-width: 32px; gap: 6px; }
+  .sw-more { display: none; }       /* "Rose" for "Rose paper" on the narrowest screens */
+  .menu-btn { padding-inline: 12px; }
+}
+
+/* ===== HERO ===== */
+.hero { padding-block: clamp(12px, 3vw, 32px) clamp(72px, 10vw, 130px); text-align: center; }
+.stage { position: relative; width: min(100%, 560px); height: clamp(272px, 29vw, 340px); margin: 0 auto 8px; touch-action: pan-y; border-radius: 8px; cursor: crosshair; }
+.stage:focus-visible { outline: 2px solid var(--accent); outline-offset: 8px; }
+.stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; transition: opacity .13s linear; }
+.stage canvas.fade { opacity: 0; transition-duration: .12s; }
+.stage-readout { position: absolute; left: 50%; bottom: 0; width: max(100%, min(680px, calc(100vw - 2 * var(--pad)))); transform: translateX(-50%); font-family: var(--mono); font-size: 12.5px; line-height: 1.55; letter-spacing: .03em; color: var(--mute); pointer-events: none; text-align: center; font-variant-numeric: tabular-nums; }
+.stage-readout .l { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stage-readout .cjk { font-size: 12.5px; color: var(--ink); }
+/* No-JS fallback: three CSS ellipses and an axis, the same tilt family as the canvas */
+.stage-fallback { position: absolute; inset: 0; pointer-events: none; }
+.stage-fallback i { position: absolute; left: 50%; top: 46%; width: 220px; height: 220px; margin: -110px 0 0 -110px; border: 1.5px solid var(--ar-ink); border-radius: 50%; }
+.stage-fallback .f1 { transform: rotateX(72deg); }
+.stage-fallback .f2 { transform: rotateY(63deg); }
+.stage-fallback .f3 { width: 190px; height: 190px; margin: -95px 0 0 -95px; transform: rotate(-24deg) rotateX(59deg); }
+.stage-fallback .fa { width: 1px; height: 250px; margin: -125px 0 0 0; border: 0; border-radius: 0; background: var(--ar-axis); transform: rotate(-32deg); }
+.stage-fallback .fg { left: 10%; right: 10%; top: auto; bottom: 22px; width: auto; height: 1px; margin: 0; border: 0; border-radius: 0; background: var(--ar-ground); }
+html.js .stage-fallback { display: none; }
+/* Under the stage: the one historical note, which opens on the ring legend (HTML, so CJK never depends on the canvas) */
+.stage-under { text-align: center; margin-bottom: clamp(22px, 3vw, 34px); }
+.gloss[hidden] { display: none; }
+.hnote { display: block; max-width: 100%; font-family: var(--mono); font-size: 12.5px; color: var(--mute); text-align: center; }
+.hnote summary { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; cursor: pointer; list-style: none; line-height: 1.9; }
+.hnote summary::-webkit-details-marker { display: none; }
+.hnote summary .sum-t { border-bottom: 1px solid var(--line-strong); padding-bottom: 1px; }
+.hnote summary:hover { color: var(--ink); }
+.hnote summary:hover .sum-t { border-color: var(--accent); }
+.hnote summary:hover .glyph-btn, .hnote[open] .glyph-btn { color: var(--ink); border-color: var(--accent); }
+.hnote[open] summary { color: var(--ink); }
+.legend { display: block; width: min(640px, 100%); margin: 14px auto 0; font-family: var(--mono); font-size: 12.5px; letter-spacing: .03em; color: var(--mute); line-height: 1.8; text-wrap: balance; word-break: keep-all; }
+.legend .lg { white-space: nowrap; }
+.legend .cjk { font-size: 12.5px; }
+.hnote p { width: min(640px, 100%); margin: 14px auto 0; text-align: left; font-family: var(--body); font-size: 14.5px; line-height: 1.6; color: var(--mute-strong); text-wrap: pretty; }
+.hnote p + p { margin-top: 10px; }
+.hnote .cjk { color: var(--ink); }
+.hero h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.02; letter-spacing: -0.015em; }
+.hero h1 em { font-style: italic; color: var(--ink); }
+.hero h1 .q { color: var(--accent); }
+.hero h1 .q:first-of-type { margin-left: -.04em; }
+.hero h1 .q:last-of-type { margin-right: .02em; }
+.hero-line { max-width: 560px; margin: 22px auto 0; font-size: clamp(16px, 1.6vw, 19px); line-height: 1.55; color: var(--mute-strong); text-wrap: balance; }
+.hero-line b { color: var(--ink); font-weight: 500; }
+.hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 34px; }
+.hero-meta { margin-top: 32px; text-wrap: balance; }
+
+/* ===== SECTION SCAFFOLD ===== */
+.section { padding-block: var(--section); border-top: 1px solid var(--line); }
+.section-grid { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 40px clamp(32px, 6vw, 96px); align-items: start; }
+.section-head { position: sticky; top: 96px; }
+.section-head h2 { font-size: 30px; }
+.section-head p { margin-top: 14px; color: var(--mute); font-size: 14.5px; max-width: 230px; text-wrap: pretty; }
+@media (hover: none), (max-width: 720px) { .hint-hover { display: none; } }
+@media (max-width: 720px) {
+  .section-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .section-head { position: static; }
+  .section-head p { max-width: none; }
+}
+
+/* ===== RESEARCH ===== */
+.thesis { font-size: clamp(19px, 2.2vw, 24px); line-height: 1.45; font-weight: 400; letter-spacing: -0.005em; color: var(--ink); max-width: 720px; text-wrap: pretty; }
+.thesis + .thesis { margin-top: 1.2em; color: var(--mute-strong); }
+/* The two threads share four rows (label, title, org, list) so their lists start level at every width; without subgrid support they fall back to independent columns */
+.threads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto auto auto 1fr; gap: 0 clamp(24px, 4vw, 56px); margin-top: 56px; }
+.thread { display: grid; grid-template-rows: subgrid; grid-row: span 4; row-gap: 0; border-top: 1px solid var(--line); padding-top: 24px; }
+.thread .mono { display: block; margin-bottom: 18px; }
+.thread h3 { font-size: 19px; line-height: 1.25; }
+.thread .org { margin-top: 6px; color: var(--mute-strong); font-size: 15px; }
+.thread ul { margin-top: 20px; display: grid; gap: 14px; align-self: start; }
+.thread li { font-size: 15px; line-height: 1.55; color: var(--mute-strong); text-wrap: pretty; }
+.thread li b { color: var(--ink); font-weight: 500; }
+@media (max-width: 720px) { .threads { grid-template-columns: 1fr; grid-template-rows: none; gap: 32px; margin-top: 40px; } .thread { display: block; grid-row: auto; padding-top: 20px; } }
+.repos { margin-top: 56px; border-top: 1px solid var(--line); }
+.repos .mono.cap { display: block; margin: 24px 0 4px; }
+.repos li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 32px; padding: 18px 0; border-bottom: 1px solid var(--line); align-items: start; }
+.repos li:last-child { border-bottom: 0; }
+.repos .repo { font-family: var(--mono); font-size: 14px; color: var(--ink); border-bottom: 1px solid var(--line-strong); transition: border-color .2s; }
+.repos .repo:hover { border-color: var(--accent); }
+.repos .desc { display: block; margin-top: 6px; font-size: 15px; line-height: 1.55; color: var(--mute-strong); max-width: 62ch; text-wrap: pretty; }
+.repos .arrow { color: var(--mute); font-size: 12px; padding-top: 4px; }
+@media (max-width: 720px) { .repos { margin-top: 40px; } }
+
+/* ===== PUBLICATIONS ===== */
+.pubs { display: grid; gap: 16px; }
+.pub { position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; border: 1px solid var(--line); border-radius: var(--radius); padding: 32px 36px 34px; background: var(--bg); transition: border-color .35s var(--ease); --mx: 50%; --my: 50%; }
+.pub.solo { grid-template-columns: minmax(0, 1fr); }   /* a card without a reading runs the full width */
+/* the lamp on hover: a faint warm wash clipped inside the card, following the pointer; never a border glow */
+.pub::before { content: ""; position: absolute; inset: 0; background: radial-gradient(260px 200px at var(--mx) var(--my), var(--wash), transparent 70%); opacity: 0; transition: opacity .35s var(--ease); pointer-events: none; }
+.pub:hover::before, .pub:focus-within::before, .pub.is-open::before { opacity: 1; }
+.pub:hover, .pub:focus-within, .pub.is-open { border-color: var(--line-strong); }
+.pub > * { position: relative; }
+.pub-status { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px; }
+/* Status is a pivot ring: filled for the published entry, hollow for the two in preparation; it sits on the first line of the label even when the label wraps */
+.mark { position: relative; flex: none; width: 16px; height: 9px; margin-top: 5px; border: 1px solid var(--ink); border-radius: 50%; }
+.mark::after { content: ""; position: absolute; left: 50%; top: 50%; width: 5px; height: 5px; margin: -2.5px 0 0 -2.5px; border-radius: 50%; background: var(--ink); }
+.mark.prep { border-color: var(--control-line); }
+.mark.prep::after { display: none; }
+.pub h3 { font-size: clamp(21px, 2.3vw, 27px); line-height: 1.2; }
+.pub .authors { margin-top: 10px; font-size: 15px; color: var(--mute-strong); }
+.pub .authors b { color: var(--ink); font-weight: 500; }
+.pub .venue { font-style: normal; color: var(--ink); }
+.pub .summary { margin-top: 18px; font-size: 15px; line-height: 1.6; color: var(--mute-strong); max-width: 60ch; text-wrap: pretty; }
+.pub .langs { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 6px; }
+.pub .langs li { font-family: var(--mono); font-size: 11.5px; letter-spacing: .04em; color: var(--mute); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.pub-links .pill { height: 32px; padding-inline: 14px; font-size: 12.5px; }
+/* The key finding is a reading card: a hairline box headed by a tiny mono label. All of it is legible at rest; the number alone sits a hair out of focus and resolves sharp on hover, focus or pin */
+.pub-cast { align-self: end; }
+.reading { position: relative; border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px 18px; text-align: left; }
+.reading .lab { display: block; font-family: var(--mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); margin-bottom: 10px; }
+.stat-num { display: block; font-family: var(--display); font-weight: 400; letter-spacing: -0.01em; font-size: clamp(36px, 3.6vw, 46px); line-height: 1; color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; filter: blur(.7px); opacity: .82; transition: filter .45s var(--ease), opacity .45s var(--ease); }
+.pub:hover .stat-num, .pub:focus-within .stat-num, .pub.is-open .stat-num { filter: blur(0); opacity: 1; }
+.stat-cap { display: block; margin-top: 12px; font-size: 13.5px; line-height: 1.5; color: var(--mute-strong); max-width: 24ch; text-wrap: pretty; }
+.stat-toggle { position: absolute; top: 18px; right: 18px; z-index: 2; width: 24px; height: 24px; border: 1px solid var(--control-line); border-radius: 50%; font-family: var(--mono); font-size: 12.5px; color: var(--mute); display: inline-flex; align-items: center; justify-content: center; transition: color .2s, border-color .2s; }
+.stat-toggle:hover, .stat-toggle[aria-pressed="true"] { color: var(--ink); border-color: var(--accent); }
+@media (hover: none) { .stat-num { filter: none; opacity: 1; } .stat-toggle { display: none; } }
+@media (max-width: 1100px) {
+  .pub { grid-template-columns: 1fr; gap: 24px; }   /* below this the reading would be wider than the body it annotates */
+}
+@media (max-width: 840px) {
+  .pub { padding: 26px 22px 28px; }
+}
+@media (max-width: 480px) {
+  .pub-status { gap: 10px; }
+  .pub-status .mono.cap { letter-spacing: .08em; }   /* the longest status label stays on one line at 390px */
+}
+@media (max-width: 720px) { .stat-num { filter: none; opacity: 1; } .stat-toggle { display: none; } }
+
+/* ===== EXPERIENCE / TEACHING ===== */
+.ledger li { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid var(--line); align-items: start; }
+.ledger .role { font-size: 19px; line-height: 1.3; }
+.ledger .org { color: var(--mute-strong); font-size: 15px; margin-top: 4px; }
+.ledger .note { color: var(--mute-strong); font-size: 15px; margin-top: 12px; max-width: 62ch; line-height: 1.55; text-wrap: pretty; }
+.ledger .date { text-align: right; white-space: nowrap; padding-top: 5px; }
+.ledger .group { padding: 30px 0 12px; border-bottom: 0; display: block; scroll-margin-top: 64px; }   /* #teaching lands below the sticky bar */
+.ledger .group + li { border-top: 1px solid var(--line); }
+.ledger .group .head { display: flex; align-items: baseline; gap: 14px; }
+.ledger .group h3 { font-family: var(--display); font-weight: 400; font-size: 24px; }
+.ledger .group p { margin-top: 8px; color: var(--mute-strong); font-size: 15px; max-width: 62ch; }
+@media (max-width: 720px) {
+  .ledger li { grid-template-columns: 1fr; gap: 6px; }
+  .ledger .date { text-align: left; order: -1; padding-top: 0; }
+}
+.skills { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--line); }
+.skills .mono.cap { display: block; margin-bottom: 16px; }
+.skills ul { display: grid; gap: 10px; }
+.skills li { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 4px 24px; align-items: baseline; font-size: 15px; line-height: 1.55; color: var(--mute-strong); }
+.skills li .k { font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--mute); }
+@media (max-width: 720px) { .skills li { grid-template-columns: 1fr; } }
+
+/* ===== EDUCATION ===== */
+.edu-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px 32px; align-items: start; }
+.edu-top h3 { font-size: clamp(21px, 2.3vw, 27px); line-height: 1.2; }
+.edu-top .date { white-space: nowrap; padding-top: 8px; }
+.degrees { margin-top: 26px; display: grid; gap: 14px; }
+.degrees li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 12px; align-items: baseline; }
+.degrees .markt { font-family: var(--mono); font-size: 12.5px; color: var(--mute); }
+.degrees .deg { font-weight: 500; }
+.degrees .col { color: var(--mute-strong); font-size: 15px; }
+.degrees li.tick { position: relative; }
+.degrees li.tick::before { content: ""; position: absolute; left: 0; top: .55em; width: 1px; height: 7px; background: var(--line-strong); }   /* the same graduation tick as every other list */
+.edu-block { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--line); }
+.edu-block .mono.cap { display: block; margin-bottom: 16px; }
+.edu-block p { color: var(--mute-strong); font-size: 15px; max-width: 62ch; }
+.edu-block p b { color: var(--ink); font-weight: 500; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips li { max-width: 100%; border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 13.5px; color: var(--mute); background: var(--bg); transition: border-color .2s, color .2s; }   /* a long course name wraps inside its chip rather than widening the page */
+.chips li:hover { border-color: var(--line-strong); color: var(--ink); }
+.chips li .code { font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; color: var(--ink); margin-right: 7px; white-space: nowrap; }
+.chips li.now { border-style: dashed; }   /* in progress: the same pending mark as a dashed pill */
+.edu-block .key { display: block; margin-top: 14px; }
+@media (max-width: 720px) { .edu-top { grid-template-columns: 1fr; } .edu-top .date { padding-top: 0; order: -1; } }
+
+/* ===== FOOTER ===== */
+.footer { border-top: 1px solid var(--line); padding-block: 56px 48px; }
+.footer-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: end; }
+.footer .name { font-family: var(--display); font-size: 22px; }
+.footer .email { display: inline-block; margin-top: 10px; font-family: var(--mono); font-size: 14px; color: var(--ink); user-select: all; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.colophon { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; }
+.colophon .mono { max-width: 64ch; line-height: 1.6; font-size: 12.5px; display: block; }
+.colophon .hint { display: inline-flex; align-items: center; gap: 10px; }
+/* the seal that closes a Chinese book: 周 reversed out of a cinnabar or rose square; a hairline square in Bronze */
+.seal { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; background: var(--seal-bg); border: 1px solid var(--seal-line); color: var(--seal-ink); font-family: var(--cjk); font-size: 12px; line-height: 1; border-radius: 2px; vertical-align: -4px; margin-left: 8px; }
+.glyph-btn { width: 24px; height: 24px; padding: 0; border: 1px solid var(--control-line); border-radius: 50%; font-family: var(--mono); font-size: 12.5px; color: var(--mute); display: inline-flex; align-items: center; justify-content: center; transition: color .2s, border-color .2s; }
+.glyph-btn .cjk { font-size: 12px; }
+.glyph-btn:hover { color: var(--ink); border-color: var(--accent); }
+@media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; align-items: start; } }
+
+/* ===== FUN: SHORTCUTS SHEET ===== */
+.sheet { position: fixed; inset: 0; z-index: 70; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; border: 0; display: grid; place-items: center; padding: var(--pad); color: inherit; background: var(--scrim); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.sheet:not([open]) { display: none; }
+.sheet::backdrop { background: transparent; }
+.sheet-card { width: min(100%, 460px); background: var(--bg); border: 1px solid var(--line-strong); border-radius: var(--radius); padding: 26px 28px 28px; }
+.sheet-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.sheet-card h2 { font-size: 22px; }
+.sheet-card ul { display: grid; gap: 12px; }
+.sheet-card li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; font-size: 15px; color: var(--mute-strong); }
+.sheet-card li span:first-child { color: var(--ink); flex: 1 0 auto; }
+.sheet-card li span:last-child { text-align: right; flex: 0 1 auto; margin-left: auto; line-height: 1.9; }
+.sheet-card .themes { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; line-height: 1.7; color: var(--mute-strong); }
+.sheet-card .themes .cjk { color: var(--ink); }
+kbd { font-family: var(--mono); font-size: 12.5px; color: var(--ink); border: 1px solid var(--control-line); border-radius: 6px; padding: 2px 7px; white-space: nowrap; }
+.sheet-close { width: 24px; height: 24px; border: 1px solid var(--control-line); border-radius: 50%; font-size: 14px; color: var(--mute); display: inline-flex; align-items: center; justify-content: center; }
+.sheet-close:hover { color: var(--ink); border-color: var(--accent); }
+
+.skip { position: absolute; left: 16px; top: -60px; z-index: 100; padding: 10px 16px; background: var(--ink); color: var(--bg); border-radius: 999px; font-size: 14px; font-weight: 600; }
+.skip:focus { top: 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
 </style>
 </head>
 <body>
-<header><b>Thompson Zhou</b><span>Berkeley, CA</span></header>
-<main>
-  <div class="mark" aria-hidden="true"><i></i><i></i><i></i><s></s><u></u></div>
-  <h1>Chuanjun <em>“Thompson”</em> Zhou</h1>
-  <p>Undergraduate researcher at UC Berkeley. I work on <b>learning under imperfect supervision</b>: what happens when the labels you have are a lossy, biased observation of the thing you actually want to learn.</p>
-  <div class="meta">Site arriving October 2026</div>
-  <div class="links"><a href="mailto:chuanjunzhou@berkeley.edu">chuanjunzhou@berkeley.edu</a><span>·</span><a href="https://github.com/chuanjunzhou">github.com/chuanjunzhou</a></div>
+<script>
+/* Before first paint: re-apply the stored theme (or derive one from the host) so a Woodcut or Rose paper visitor never sees a Bronze flash. */
+(function () {
+  var r = document.documentElement, s = null, m;
+  r.classList.add('js');
+  try { s = localStorage.getItem('tz-mode'); } catch (e) {}
+  if (s === 'night' || s === 'day' || s === 'rose') m = s;
+  else {
+    var t = r.getAttribute('data-theme'), light = false;
+    if (t === 'light') light = true;
+    else if (t !== 'dark') { try { light = window.matchMedia('(prefers-color-scheme: light)').matches; } catch (e) {} }
+    m = light ? 'day' : 'night';
+  }
+  if (!r.hasAttribute('data-mode')) r.setAttribute('data-mode', m);
+})();
+</script>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===== NAV ===== -->
+<header class="top">
+  <div class="wrap">
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a class="brand" href="#top">Thompson Zhou <i class="sep" aria-hidden="true"></i> <span class="where">Berkeley</span></a>
+      <div class="switch" role="radiogroup" aria-label="Material: the same instrument as bronze, as a woodcut, or on rose paper" id="switch">
+        <button type="button" role="radio" aria-checked="true" data-set="night" tabindex="0" class="sw-bronze" title="青銅 Bronze: the cast instrument under a lamp"><i class="sw-mark" aria-hidden="true"><b class="ra"></b><b class="rb"></b><b class="pv"></b></i><span class="sw-lab" aria-hidden="true">Bronze<span class="cjk" lang="zh-Hant">青銅</span></span><span class="vh">Bronze, 青銅 qingtong</span></button>
+        <button type="button" role="radio" aria-checked="false" data-set="day" tabindex="-1" class="sw-woodcut" title="刻本 Woodcut: the instrument as an ink drawing in a printed treatise"><i class="sw-mark" aria-hidden="true"><b class="ra"></b><b class="rb"></b><b class="pv"></b></i><span class="sw-lab" aria-hidden="true">Woodcut<span class="cjk" lang="zh-Hant">刻本</span></span><span class="vh">Woodcut, 刻本 keben</span></button>
+        <button type="button" role="radio" aria-checked="false" data-set="rose" tabindex="-1" class="sw-rose" title="薛濤箋 Rose paper: the same woodcut on a pale sheet after Xue Tao's rose-red notepaper"><i class="sw-mark" aria-hidden="true"><b class="ra"></b><b class="rb"></b><b class="pv"></b></i><span class="sw-lab" aria-hidden="true">Rose<span class="sw-more"> paper</span><span class="cjk" lang="zh-Hant">薛濤箋</span></span><span class="vh">Rose paper, 薛濤箋 Xue Tao paper</span></button>
+      </div>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" id="menu-btn">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="assets/cv.pdf">CV</a></li>
+      </ul>
+      <a class="nav-mail" href="mailto:chuanjunzhou@berkeley.edu">chuanjunzhou@berkeley.edu</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ===== HERO: one armillary sphere on one canvas ===== -->
+<section class="hero wrap" id="top" aria-labelledby="name">
+  <!-- The portrait: the real photo, visually hidden; the canvas draws it at the centre of the sphere. Replace assets/portrait.jpg with a square photo. -->
+  <img id="portrait" class="vh" src="assets/portrait.jpg" alt="Chuanjun Zhou" width="800" height="800">
+  <div class="stage" id="stage" tabindex="0" role="slider" aria-label="The sighting tube, with the portrait at the centre of the sphere. Left and right arrow keys turn it about the polar axis, up and down change its north polar distance, Home re-centres it on the pole." aria-valuemin="0" aria-valuemax="120" aria-valuenow="0" aria-valuetext="north polar distance 0 du, on the pole">
+    <div class="stage-fallback" aria-hidden="true"><i class="f1"></i><i class="f2"></i><i class="f3"></i><i class="fa"></i><i class="fg"></i></div>
+    <canvas id="arm" aria-hidden="true"></canvas>
+    <span class="stage-readout" id="stage-readout" aria-hidden="true"></span>
+  </div>
+  <div class="stage-under">
+    <details class="hnote" id="note">
+      <summary><span class="sum-t"><span class="cjk" lang="zh-Hant">渾儀</span> hunyi<span class="gloss" id="gloss" hidden> · the Chinese armillary sphere</span></span><span class="glyph-btn" aria-hidden="true">?</span><span class="vh"> What is a hunyi? Show a short historical note.</span></summary>
+      <!-- The ring legend (HTML, so CJK never depends on the canvas); each term and its gloss is one unbreakable unit, the middots are the only break points -->
+      <span class="legend"><span class="vh">Ring legend: </span><span class="lg"><span class="cjk" lang="zh-Hant">地平</span> horizon</span> · <span class="lg"><span class="cjk" lang="zh-Hant">子午</span> meridian</span> · <span class="lg"><span class="cjk" lang="zh-Hant">赤道</span> equator</span> · <span class="lg"><span class="cjk" lang="zh-Hant">黃道</span> ecliptic</span> · <span class="lg"><span class="cjk" lang="zh-Hant">四游雙環</span> double ring</span> · <span class="lg"><span class="cjk" lang="zh-Hant">望筒</span> sighting tube</span></span>
+      <!-- The one historical note on the page. Dates and names only in the forms checked against the historian's corrections; when unsure, say less. -->
+      <p>A <span class="cjk" lang="zh-Hant">渾儀</span> hunyi is a set of nested graduated rings standing for circles of the sky, mounted on a polar axis tilted to the latitude of the observing site; Kaifeng, the Northern Song capital, lies near 35° north. The observer sighted a star through a straight tube in the innermost ring and read its place off the rings, in Chinese practice as a north polar distance (<span class="cjk" lang="zh-Hant">去極度</span>) and a position along the equator, with the circle divided into 365¼ du (<span class="cjk" lang="zh-Hant">度</span>), one for each day of the sun's yearly course, rather than 360 degrees. On this sphere the rings follow Su Song's three nests: the fixed <span class="cjk" lang="zh-Hant">六合儀</span> liuhe yi with horizon, meridian and a fixed equator ring graduated for the hours, the <span class="cjk" lang="zh-Hant">三辰儀</span> sanchen yi turning about the polar axis with the equator and ecliptic rings, and the inner <span class="cjk" lang="zh-Hant">四游儀</span> siyou yi, a double ring carrying the sighting tube and its north-polar-distance scale. This sphere's axis is set to Berkeley's latitude, 37.9° north, and its middle nest turns at the sidereal rate computed from the present moment, so the equator and ecliptic rings stand as the sky stands over Berkeley now; the small disc on the ecliptic ring is the sun at today's longitude. In the <span class="cjk" lang="zh-Hant">渾天</span> hun tian model of the heavens the earth sits at the centre like the yolk inside an egg (after Zhang Heng, <span class="cjk" lang="zh-Hant">渾天儀注</span> Huntian yi zhu, 2nd century); on this sphere that place holds the portrait. The longer graduations on the equator ring are the boundaries of the twenty-eight lunar mansions (<span class="cjk" lang="zh-Hant">二十八宿</span>), placed at the right ascensions of their determinative stars (<span class="cjk" lang="zh-Hant">距星</span>) for the epoch J2000; the boundaries have moved with precession since the Song, so the mansion the page names for the sun is approximate.</p>
+      <p>In 725 the Tang monk Yi Xing (<span class="cjk" lang="zh-Hant">一行</span>) and Liang Lingzan (<span class="cjk" lang="zh-Hant">梁令瓚</span>) built a water-driven sphere with an escapement. In 979, in the Taiping Xingguo era of the Northern Song, Zhang Sixun (<span class="cjk" lang="zh-Hant">張思訓</span>) presented the Taiping Hunyi (<span class="cjk" lang="zh-Hant">太平渾儀</span>), an astronomical clock in the water-driven line, its drive wheel run on mercury instead of water. Su Song (<span class="cjk" lang="zh-Hant">蘇頌</span>, 1020 to 1101), working with Han Gonglian (<span class="cjk" lang="zh-Hant">韓公廉</span>), then built the clock tower <span class="cjk" lang="zh-Hant">水運儀象臺</span> Shuiyun yixiang tai in Kaifeng, a wooden pilot model in 1088 and the bronze machinery complete about 1090, whose clockwork turned the bronze armillary sphere on its top platform so that its rings followed the sky; a celestial globe (<span class="cjk" lang="zh-Hant">渾象</span>) sat in the chamber below. He described it in <span class="cjk" lang="zh-Hant">新儀象法要</span> Xin yixiang fayao, presented in the 1090s; the illustrations in the printed treatise, transmitted through later editions, are the model for the Woodcut theme. The tower was lost after Kaifeng fell to the Jin in 1127.</p>
+    </details>
+  </div>
+  <h1 id="name">Chuanjun <span class="q">“</span><em>Thompson</em><span class="q">”</span> Zhou</h1>
+  <p class="hero-line">I work on <b>learning under imperfect supervision</b>: what happens when the labels you have are a lossy, biased observation of the thing you actually want to learn.</p>
+  <ul class="hero-actions">
+    <li><a class="pill" href="mailto:chuanjunzhou@berkeley.edu">Email <span class="arrow">↗</span></a></li>
+    <li><a class="pill" href="https://github.com/chuanjunzhou" rel="me noopener">GitHub <span class="arrow">↗</span></a></li>
+    <li><a class="pill" href="assets/cv.pdf">CV <span class="arrow">↓</span></a></li>
+  </ul>
+  <p class="mono cap hero-meta">Undergraduate researcher, UC Berkeley · Applying to CS / ML PhD programs for Fall 2027 entry</p>
+</section>
+
+<!-- ===== I · RESEARCH ===== -->
+<section class="section" id="research" aria-labelledby="research-h">
+  <div class="wrap section-grid">
+    <div class="section-head">
+      <h2 id="research-h">Research</h2>
+      <p>An armillary never shows you the sky. It gives a reading through a tube against graduated rings, a structured and lossy record of what is there. That kind of record is what I study.</p>
+    </div>
+    <div>
+      <p class="thesis">Across two unrelated domains I keep finding the same problem: the supervision signal is a lossy, biased observation of the thing you actually want to learn. In radiology, free-text reports are a noisy projection of the lesion mask. In ancient languages, a fragmentary lexicon is a noisy projection of the language.</p>
+      <p class="thesis">In both cases the field's default assumption, that cleaner labels help, turns out to be wrong or at least unreliable. In both cases the failure is predictable from a measurable property of the supervision. I want to build the general theory and the general fixes.</p>
+
+      <div class="threads">
+        <article class="thread">
+          <span class="mono cap">Thread 01 · Medical imaging</span>
+          <h3>Report-Supervised Tumor Segmentation</h3>
+          <p class="org">UCSF Radiology and Biomedical Imaging</p>
+          <ul class="ticks">
+            <li><b>Abdominal CT, the CVPR 2027 submission.</b> Learning to segment liver, kidney and pancreas tumors from radiology reports when hand-drawn masks are scarce, and deciding how much each report statement should be trusted; I lead the implementation and experiments.</li>
+            <li><b>Calibrated report supervision</b> inside the <span class="nb">R-Super</span> loss, my honors thesis: separate trust for each kind of report claim (a lesion's size, a hedged finding, a “no tumor” statement), fitted on a small set of masked cases and frozen before training. Each constraint is blended between its strict and relaxed versions by that trust, with unit tests and pre-registered experiments.</li>
+            <li><b>Prostate MRI.</b> Earlier work: a 12-field LLM extraction schema over 1,471 reports, <span class="nb">R-Super</span> ported from CT to MRI, and MedFormer trained to a test Dice of&nbsp;0.70. The objective reads only lesion size and location, so most extracted fields never reach the model, and unreported lesions raise false positives that best-threshold F1 hides.</li>
+          </ul>
+        </article>
+        <article class="thread">
+          <span class="mono cap">Thread 02 · Low-resource NLP</span>
+          <h3>Cross-lingual transfer for cuneiform</h3>
+          <p class="org">Fact Grid Cuneiform, UC Berkeley, with Prof. Adam Anderson</p>
+          <ul class="ticks">
+            <li><b>Lexicon coverage.</b> First author on the EMNLP 2026 main-conference paper, with its benchmark and the <code>cunei-tools</code> library. Lexicon coverage of the target language predicts Morfessor's transfer, and clamping a high-resource source to a low-resource target's sign inventory shows the effect is causal. The numbers are on the EMNLP card below.</li>
+            <li><b><span class="nb">OWLID-OCR</span></b> (in preparation; target ACL 2027). I lead the modeling for an OCR post-correction system for cuneiform: a noisy-channel generative formulation with an open-set unknown-token mechanism and hierarchical pooling across small embedded-language lexica.</li>
+            <li><b>Pipeline and tagging.</b> An end-to-end pipeline converts noisy transliterations to normalized cuneiform (95%+ conversion on ~2M tokens); a fine-tuned BART seq2seq model handles lemmatization and morphological tagging.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Public code (real repositories on github.com/chuanjunzhou) -->
+      <div class="repos">
+        <span class="mono cap">Public code</span>
+        <ul>
+          <li>
+            <div>
+              <a class="repo" href="https://github.com/chuanjunzhou/stat238-bayesian-cuneiform" rel="noopener">stat238-bayesian-cuneiform</a>
+              <span class="desc">Stat 238 final project: Bayesian hyperbolic embedding of Sumerian cuneiform lexica with a Schwarz-Pick prior.</span>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </li>
+          <li>
+            <div>
+              <a class="repo" href="https://github.com/chuanjunzhou/ElamiteDatasetLab" rel="noopener">ElamiteDatasetLab</a>
+              <span class="desc">Elamite-Unicode conversion work.</span>
+            </div>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== II · PUBLICATIONS ===== -->
+<section class="section" id="publications" aria-labelledby="pubs-h">
+  <div class="wrap section-grid">
+    <div class="section-head">
+      <h2 id="pubs-h">Publications</h2>
+      <p class="hint-hover">Two cards carry a reading. Hover one, or press its “+”, and the number resolves.</p>
+    </div>
+    <div class="pubs">
+
+      <article class="pub" id="pub-emnlp">
+        <button class="stat-toggle" type="button" aria-pressed="false" aria-controls="stat-emnlp" aria-label="Resolve the key finding of the EMNLP 2026 paper"><span>+</span></button>
+        <div class="pub-body">
+          <div class="pub-status"><span class="mark" aria-hidden="true"></span><span class="mono cap">EMNLP 2026 · main conference · oral</span></div>
+          <h3>What Transfers Across Cuneiform?</h3>
+          <p class="authors"><b>C. Zhou</b> and A. Anderson. <cite class="venue">Proceedings of EMNLP 2026</cite> (main conference, oral presentation).</p>
+          <p class="summary">A benchmark, the <code>cunei-tools</code> library, and the central finding that lexicon coverage of the target language predicts Morfessor's transfer at r&nbsp;=&nbsp;0.91 across 140 runs (14 source sizes × 5 seeds), while transitional-probability segmentation holds F1&nbsp;&gt;&nbsp;0.95 across all six language pairs. The coverage effect is causal: clamping the sign inventory collapses transfer from 0.857&nbsp;to&nbsp;0.283, and matched-size controls separate coverage from corpus size.</p>
+          <ul class="langs" aria-label="Languages"><li>Akkadian</li><li>Sumerian</li><li>Elamite</li><li>Hittite</li></ul>
+          <!-- Paper PDF and cunei-tools repo are not public yet. When they are, restore:
+          <ul class="pub-links">
+            <li><a class="pill" href="…">Paper <span class="arrow">↗</span></a></li>
+            <li><a class="pill" href="…">Code <span class="arrow">↗</span></a></li>
+          </ul> -->
+        </div>
+        <div class="pub-cast">
+          <div class="reading">
+            <span class="lab">Reading</span>
+            <div class="pub-stat" id="stat-emnlp">
+              <span class="stat-num">r = 0.91</span>
+              <span class="stat-cap">Lexicon coverage of the target language predicts segmenter transfer across 140 runs; clamping the sign inventory collapses it from 0.857&nbsp;to&nbsp;0.283.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub prep" id="pub-cvpr">
+        <button class="stat-toggle" type="button" aria-pressed="false" aria-controls="stat-cvpr" aria-label="Resolve the key finding of the CVPR 2027 submission"><span>+</span></button>
+        <div class="pub-body">
+          <div class="pub-status"><span class="mark prep" aria-hidden="true"></span><span class="mono cap">in preparation · target CVPR 2027</span></div>
+          <h3>Noise-Aware <span class="nb">Report-Supervised</span> Learning: Decomposing <span class="nb">Report-Quality</span> and Extraction Noise</h3>
+          <p class="authors">H. Gu, <b>C. Zhou</b>, et al.</p>
+          <p class="summary"><span class="nb">Report-supervised</span> tumor segmentation on abdominal CT (liver, kidney, pancreas): learning to segment tumors from radiology reports when hand-drawn masks are scarce, and deciding how much each report statement should be trusted. The pipeline parses 2,760 radiology reports into 7,442 tumor-level records, builds organ masks for 2,764 CT scans, and reproduces <span class="nb">R-Super</span> training; the released <span class="nb">R-Super</span> loader trains on only about a quarter of report-labeled scans, and ours supervises from all usable reports.</p>
+          <ul class="langs" aria-label="Setting"><li>Abdominal CT</li><li>Liver / kidney / pancreas</li></ul>
+        </div>
+        <div class="pub-cast">
+          <div class="reading">
+            <span class="lab">Reading</span>
+            <div class="pub-stat" id="stat-cvpr">
+              <span class="stat-num">1 in 4</span>
+              <span class="stat-cap">The released <span class="nb">R-Super</span> loader trains on only about a quarter of report-labeled scans; ours supervises from all usable reports.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub prep solo" id="pub-owlid">
+        <div class="pub-body">
+          <div class="pub-status"><span class="mark prep" aria-hidden="true"></span><span class="mono cap">in preparation · target ACL 2027</span></div>
+          <h3><span class="nb">OWLID-OCR</span>: Whose Word Is This? <span class="nb">Open-World</span> Identification of Ancient Languages Embedded in Modern Scholarship</h3>
+          <p class="authors"><b>C. Zhou</b> and A. Anderson.</p>
+          <p class="summary">An OCR post-correction system for cuneiform: a noisy-channel generative formulation with an open-set unknown-token mechanism and hierarchical pooling across small embedded-language lexica.</p>
+          <ul class="langs" aria-label="Setting"><li>Cuneiform</li><li>OCR post-correction</li><li>Embedded-language lexica</li></ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== III · EXPERIENCE & TEACHING ===== -->
+<section class="section" id="experience" aria-labelledby="exp-h">
+  <div class="wrap section-grid">
+    <div class="section-head">
+      <h2 id="exp-h">Experience &amp; Teaching</h2>
+    </div>
+    <div>
+      <ul class="ledger">
+        <li>
+          <div>
+            <h3 class="role">Machine Learning Research Intern</h3>
+            <div class="org">UCSF Radiology and Biomedical Imaging</div>
+            <p class="note">Prof. Yang Yang, Prof. Kang Wang; Dr. Hanxue Gu. <span class="nb">Report-supervised</span> tumor segmentation. Built the full pipeline for the CVPR 2027 submission on UCSF's GPU cluster: LLM parsing of 2,760 radiology reports into 7,442 tumor-level records, organ masks for 2,764 CT scans, and a verified reproduction of <span class="nb">R-Super</span> training; implemented calibrated report supervision inside the <span class="nb">R-Super</span> loss, with unit tests and pre-registered experiments. Earlier, on prostate MRI: a 12-field LLM extraction schema over 1,471 reports, <span class="nb">R-Super</span> ported from CT to MRI, and MedFormer trained to a test Dice of&nbsp;0.70.</p>
+          </div>
+          <span class="mono date">May 2026 – present</span>
+        </li>
+        <li>
+          <div>
+            <h3 class="role">Undergraduate Researcher, Computational Linguistics &amp; NLP</h3>
+            <div class="org">Fact Grid Cuneiform · UC Berkeley · with Prof. Adam Anderson</div>
+            <p class="note">Cross-lingual transfer and word segmentation for Akkadian, Sumerian, Elamite, and Hittite. First author on the EMNLP 2026 main-conference paper; leading the modeling for <span class="nb">OWLID-OCR</span> (in preparation; target ACL 2027), an OCR post-correction system for cuneiform. Built an end-to-end pipeline converting noisy transliterations to normalized cuneiform (95%+ on ~2M tokens); fine-tuned a BART seq2seq model for lemmatization and morphological tagging.</p>
+          </div>
+          <span class="mono date">Jan 2026 – present</span>
+        </li>
+        <li class="group" id="teaching">
+          <div class="head"><h3>Teaching</h3></div>
+          <p>Academic Student Employee (Tutor), UC Berkeley CDSS. Three semesters. Office hours and small-group instruction; graded and identified common error patterns; authored midterm and final examination problems; maintained the course repository and Ed forum.</p>
+        </li>
+        <li>
+          <div><h3 class="role">Data C88C · Computational Structures in Data Science</h3></div>
+          <span class="mono date">Aug 2025 – Jun 2026</span>
+        </li>
+        <li>
+          <div><h3 class="role">Data C88S · Probability and Mathematical Statistics in Data Science</h3></div>
+          <span class="mono date">Jan – May 2025</span>
+        </li>
+      </ul>
+      <!-- Skills (the sheet's five lines, verbatim) -->
+      <div class="skills">
+        <span class="mono cap">Skills</span>
+        <ul>
+          <li><span class="k">Languages</span><span>Python, R, SQL, Java, MATLAB</span></li>
+          <li><span class="k">ML</span><span>PyTorch, HuggingFace Transformers, scikit-learn, NumPy/SciPy/pandas/Polars</span></li>
+          <li><span class="k">HPC</span><span>SLURM, distributed and mixed-precision training, offline model serving on air-gapped clusters</span></li>
+          <li><span class="k">Research areas</span><span>3D medical image segmentation, weak and noisy supervision, low-resource NLP, Bayesian modeling, convex optimization</span></li>
+          <li><span class="k">Human languages</span><span>English (native), Mandarin (native)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IV · EDUCATION ===== -->
+<section class="section" id="education" aria-labelledby="edu-h">
+  <div class="wrap section-grid">
+    <div class="section-head">
+      <h2 id="edu-h">Education</h2>
+    </div>
+    <div>
+      <div class="edu-top">
+        <h3>University of California, Berkeley</h3>
+        <span class="mono date">Expected May 2027</span>
+      </div>
+      <ul class="degrees">
+        <li><span class="markt">B.A.</span><div><div class="deg">Applied Mathematics</div><div class="col">College of Letters &amp; Science</div></div></li>
+        <li><span class="markt">B.A.</span><div><div class="deg">Data Science</div><div class="col">College of Computing, Data Science, and Society (CDSS)</div></div></li>
+        <li><span class="markt">Hon.</span><div><div class="deg">Data Science Honors Program</div><div class="col">Year-long research thesis, 2026–27 <span class="nb">(in progress)</span></div></div></li>
+        <li class="tick"><span class="markt" aria-hidden="true"></span><div class="col">Dean's List, Fall 2023 and Spring 2024</div></li>
+      </ul>
+      <div class="edu-block">
+        <span class="mono cap">Graduate coursework</span>
+        <ul class="chips">
+          <li><span class="code">Stat 238</span>Bayesian Statistics</li>
+          <li class="now"><span class="code">Stat 210A</span>Theoretical Statistics<span class="vh"> (in progress)</span></li>
+        </ul>
+      </div>
+      <div class="edu-block">
+        <span class="mono cap">Selected coursework</span>
+        <ul class="chips">
+          <li><span class="code">EECS 127</span>Optimization Models</li>
+          <li><span class="code">CS 189</span>Machine Learning</li>
+          <li><span class="code">CS 188</span>Artificial Intelligence</li>
+          <li class="now"><span class="code">EECS 183</span>Natural Language Processing<span class="vh"> (in progress)</span></li>
+          <li class="now"><span class="code">CS 182</span>Deep Learning<span class="vh"> (in progress)</span></li>
+          <li class="now"><span class="code">CPH 100</span>Foundations of Computational Precision Health<span class="vh"> (in progress)</span></li>
+          <li><span class="code">Data 144</span>Data Mining</li>
+          <li><span class="code">Data 100</span>Foundations of Data Science</li>
+          <li><span class="code">CS 61B</span>Data Structures</li>
+          <li><span class="code">Stat 134</span>Probability</li>
+          <li><span class="code">Stat 150</span>Stochastic Processes</li>
+          <li><span class="code">Math 104</span>Real Analysis</li>
+          <li><span class="code">Math 110</span>Abstract Linear Algebra</li>
+          <li><span class="code">Math 128A</span>Numerical Analysis</li>
+        </ul>
+        <span class="mono key" aria-hidden="true">Dashed chips are courses in progress.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
-<footer><span>No analytics.</span><span>渾儀 hunyi, n. the Chinese armillary sphere.</span></footer>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="name">Chuanjun “Thompson” Zhou</div>
+        <a class="email" href="mailto:chuanjunzhou@berkeley.edu">chuanjunzhou@berkeley.edu</a>
+      </div>
+      <ul class="footer-links">
+        <li><a class="pill" href="https://github.com/chuanjunzhou" rel="me noopener">GitHub <span class="arrow">↗</span></a></li>
+        <li><a class="pill" href="assets/cv.pdf">CV <span class="arrow">↓</span></a></li>
+      </ul>
+    </div>
+    <div class="colophon">
+      <span class="mono">Set in Newsreader, DM Sans, IBM Plex Mono and Noto Serif TC. The sphere is drawn live by the page. No analytics. <span class="nb">Last updated October 2026.<span class="seal" aria-hidden="true" lang="zh-Hant">周</span></span><span class="vh">Seal: Zhou.</span></span>
+      <span class="mono hint">
+        <button class="glyph-btn" type="button" id="clock-btn" aria-label="The water clock runs: turn the sphere through one sidereal day in six seconds" title="The water clock runs (w)"><span class="cjk" lang="zh-Hant">水</span></button>
+        <button class="glyph-btn" type="button" id="keys-btn" aria-haspopup="dialog" aria-controls="keys" aria-label="Keyboard shortcuts" title="Keyboard shortcuts"><span>?</span></button>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FUN: SHORTCUTS SHEET ===== -->
+<dialog class="sheet" id="keys" aria-labelledby="keys-h">
+  <div class="sheet-card">
+    <div class="sheet-head">
+      <h2 id="keys-h">Shortcuts</h2>
+      <button class="sheet-close" type="button" id="keys-close" aria-label="Close"><span>×</span></button>
+    </div>
+    <ul>
+      <li><span>Show this sheet</span><span><kbd>?</kbd></span></li>
+      <li><span>Close anything open</span><span><kbd>Esc</kbd></span></li>
+      <li><span>Cycle the material</span><span><kbd>t</kbd></span></li>
+      <li><span>The water clock runs: one sidereal day in six seconds</span><span><kbd>w</kbd></span></li>
+      <li><span>Sight a star</span><span>point across the sphere, or <kbd>Tab</kbd> to it and <kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd></span></li>
+      <li><span>Re-centre the tube on the pole</span><span><kbd>Home</kbd></span></li>
+      <li><span>Key finding on a publication</span><span>hover, or <kbd>Tab</kbd> to its <kbd>+</kbd></span></li>
+    </ul>
+    <p class="themes">Material · <span class="cjk" lang="zh-Hant">青銅</span> Bronze, the cast instrument under a lamp · <span class="cjk" lang="zh-Hant">刻本</span> Woodcut, the same sphere as an ink drawing in a printed treatise · <span class="cjk" lang="zh-Hant">薛濤箋</span> Rose paper, the same woodcut on a pale sheet after Xue Tao's rose-red notepaper. The material is a rendering you choose; it says nothing about the sky outside.</p>
+  </div>
+</dialog>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+  root.classList.add('js');
+  var RAD = Math.PI / 180;
+  function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
+  function easeOut(k) { return 1 - Math.pow(1 - k, 3); }
+  function token(name) { return getComputedStyle(root).getPropertyValue(name).trim(); }
+  function ordinal(n) { var r = n % 100; if (r >= 11 && r <= 13) return n + 'th'; r = n % 10; return n + (r === 1 ? 'st' : r === 2 ? 'nd' : r === 3 ? 'rd' : 'th'); }
+  function cjk(s) { return '<span class="cjk" lang="zh-Hant">' + s + '</span>'; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+
+  /* ----- The clock: twelve double-hours named after the earthly branches (子 from 23:00) and one hundred ke ----- */
+  var BRANCH = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥'];
+  var PINYIN = ['zǐ', 'chǒu', 'yín', 'mǎo', 'chén', 'sì', 'wǔ', 'wèi', 'shēn', 'yǒu', 'xū', 'hài'];
+  /* Berkeley local time, whatever zone the visitor is in (falls back to the visitor's clock if Intl lacks zones) */
+  var TZ = 'America/Los_Angeles', tzFmt = null;
+  try { tzFmt = new Intl.DateTimeFormat('en-US', { timeZone: TZ, hour: 'numeric', minute: 'numeric', second: 'numeric', hourCycle: 'h23' }); } catch (e) { tzFmt = null; }
+  function berkeleyMin(d) {
+    if (tzFmt) {
+      try {
+        var h = 0, m = 0, sec = 0;
+        tzFmt.formatToParts(d).forEach(function (x) { if (x.type === 'hour') h = +x.value; else if (x.type === 'minute') m = +x.value; else if (x.type === 'second') sec = +x.value; });
+        return (h % 24) * 60 + m + sec / 60;
+      } catch (e) {}
+    }
+    return d.getHours() * 60 + d.getMinutes() + d.getSeconds() / 60;
+  }
+  function nowMin() { return berkeleyMin(new Date()); }
+
+  /* ----- The sky over Berkeley (37.87 N, 122.27 W). Greenwich mean sidereal time by the Meeus polynomial
+     (Astronomical Algorithms, ch. 12), local sidereal time by the longitude; the sun's apparent longitude by
+     mean longitude plus the equation of centre (ch. 25, accuracy about 0.01°), its right ascension with the
+     obliquity 23.44°; the sun's lunar mansion by the last determinative star (距星) at or before that right
+     ascension, J2000 positions, so it is approximate against the historical boundaries. ----- */
+  var LAT = 37.87, LON = -122.27, SID_DAY_MIN = 1436.068;   /* one sidereal day in minutes of mean solar time */
+  var MANSIONS = [
+    ['角', 'Jiǎo', 'Horn', 13, 25], ['亢', 'Kàng', 'Neck', 14, 13], ['氐', 'Dī', 'Root', 14, 51], ['房', 'Fáng', 'Room', 15, 59],
+    ['心', 'Xīn', 'Heart', 16, 21], ['尾', 'Wěi', 'Tail', 16, 52], ['箕', 'Jī', 'Winnowing Basket', 18, 6], ['斗', 'Dǒu', 'Dipper', 18, 46],
+    ['牛', 'Niú', 'Ox', 20, 21], ['女', 'Nǚ', 'Girl', 20, 48], ['虛', 'Xū', 'Emptiness', 21, 32], ['危', 'Wēi', 'Rooftop', 22, 6],
+    ['室', 'Shì', 'Encampment', 23, 5], ['壁', 'Bì', 'Wall', 0, 13], ['奎', 'Kuí', 'Legs', 0, 57], ['婁', 'Lóu', 'Bond', 1, 55],
+    ['胃', 'Wèi', 'Stomach', 2, 43], ['昴', 'Mǎo', 'Hairy Head', 3, 45], ['畢', 'Bì', 'Net', 4, 29], ['觜', 'Zī', 'Turtle Beak', 5, 35],
+    ['參', 'Shēn', 'Three Stars', 5, 41], ['井', 'Jǐng', 'Well', 6, 23], ['鬼', 'Guǐ', 'Ghost', 8, 32], ['柳', 'Liǔ', 'Willow', 8, 38],
+    ['星', 'Xīng', 'Star', 9, 28], ['張', 'Zhāng', 'Extended Net', 9, 51], ['翼', 'Yì', 'Wings', 11, 0], ['軫', 'Zhěn', 'Chariot', 12, 16]
+  ].map(function (m) { var ra = (m[3] * 60 + m[4]) / 4; return { ch: m[0], py: m[1], en: m[2], ra: ra, du: ra / 360 * 365.25 }; });
+  function norm360(x) { x = x % 360; return x < 0 ? x + 360 : x; }
+  function jdOf(d) { return d.getTime() / 86400000 + 2440587.5; }
+  function gmstOf(jd) { var T = (jd - 2451545) / 36525; return norm360(280.46061837 + 360.98564736629 * (jd - 2451545) + 0.000387933 * T * T - T * T * T / 38710000); }
+  function sunOf(jd) {
+    var T = (jd - 2451545) / 36525;
+    var L0 = 280.46646 + 36000.76983 * T + 0.0003032 * T * T;
+    var M = norm360(357.52911 + 35999.05029 * T - 0.0001537 * T * T) * RAD;
+    var C = (1.914602 - 0.004817 * T - 0.000014 * T * T) * Math.sin(M) + (0.019993 - 0.000101 * T) * Math.sin(2 * M) + 0.000289 * Math.sin(3 * M);
+    var Om = (125.04 - 1934.136 * T) * RAD;
+    var lon = norm360(L0 + C - 0.00569 - 0.00478 * Math.sin(Om)), eps = 23.44 * RAD;
+    var ra = norm360(Math.atan2(Math.sin(lon * RAD) * Math.cos(eps), Math.cos(lon * RAD)) / RAD);
+    return { lon: lon, ra: ra };
+  }
+  function mansionOfRA(ra) {   /* the mansion whose determinative star is the last one at or before this right ascension, wrapping at 0h */
+    var best = -1, bestRa = -1, last = -1, lastRa = -1, i;
+    for (i = 0; i < MANSIONS.length; i++) {
+      if (MANSIONS[i].ra <= ra && MANSIONS[i].ra > bestRa) { best = i; bestRa = MANSIONS[i].ra; }
+      if (MANSIONS[i].ra > lastRa) { last = i; lastRa = MANSIONS[i].ra; }
+    }
+    return best >= 0 ? best : last;
+  }
+  function skyOf(d) {
+    var jd = jdOf(d), g = gmstOf(jd), l = norm360(g + LON), sun = sunOf(jd), mi = mansionOfRA(sun.ra);
+    return { jd: jd, gmst: g, lst: l, sunLon: sun.lon, sunRA: sun.ra, mansion: mi, m: MANSIONS[mi] };
+  }
+  function hmOf(deg) { var h = Math.floor(deg / 15), m = Math.floor((deg / 15 - h) * 60); return h + 'h' + pad2(m) + 'm'; }
+  function clockOf(min) {
+    min = ((min % 1440) + 1440) % 1440;
+    var i = Math.floor(((min + 60) % 1440) / 120), ke = Math.floor(min / 14.4) + 1, h = Math.floor(min / 60), m = Math.floor(min % 60);
+    return { i: i, br: BRANCH[i], py: PINYIN[i], ke: ke, hm: pad2(h) + ':' + pad2(m) };
+  }
+  function clockHTML(c, form) {   /* form: 'short' (ke 51), 'mid' (51st ke) or 'full' (51st ke of 100) */
+    return cjk(c.br + '時') + ' ' + c.py + ' · ' + c.hm + ' · ' + (form === 'short' ? 'ke ' + c.ke : ordinal(c.ke) + ' ke' + (form === 'full' ? ' of 100' : ''));
+  }
+
+  /* ----- Theme ----- */
+  var MODES = ['night', 'day', 'rose'];
+  var stored = null;
+  try { stored = localStorage.getItem('tz-mode'); } catch (e) {}
+  function initialMode() {
+    if (stored && MODES.indexOf(stored) >= 0) return stored;
+    var t = root.getAttribute('data-theme');
+    if (t === 'light') return 'day';
+    if (t === 'dark') return 'night';
+    try { if (window.matchMedia('(prefers-color-scheme: light)').matches) return 'day'; } catch (e) {}
+    return 'night';
+  }
+  if (!root.hasAttribute('data-mode')) root.setAttribute('data-mode', initialMode());
+  function syncThemeColor() {   /* the browser's chrome takes the page's ground, whatever the OS scheme says */
+    var bg = token('--bg'); if (!bg) return;
+    Array.prototype.forEach.call(document.querySelectorAll('meta[name="theme-color"]'), function (m) { m.setAttribute('content', bg); });
+  }
+  syncThemeColor();
+  function mode() { var m = root.getAttribute('data-mode'); return MODES.indexOf(m) >= 0 ? m : 'night'; }
+  var motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var reduced = motionQuery.matches;
+  if (motionQuery.addEventListener) motionQuery.addEventListener('change', function (e) { reduced = e.matches; });
+
+  /* ----- Theme switch (radiogroup, roving tabindex) ----- */
+  var sw = document.getElementById('switch');
+  var radios = Array.prototype.slice.call(sw.querySelectorAll('[role="radio"]'));
+  var themingT = 0;
+  function syncSwitch() {
+    var m = mode();
+    radios.forEach(function (b) {
+      var on = b.getAttribute('data-set') === m;
+      b.setAttribute('aria-checked', on ? 'true' : 'false');
+      b.tabIndex = on ? 0 : -1;
+    });
+  }
+  function setMode(m, store) {
+    if (MODES.indexOf(m) < 0) return;
+    root.classList.add('theming');
+    root.setAttribute('data-mode', m);
+    if (store !== false) { try { localStorage.setItem('tz-mode', m); } catch (e) {} }
+    syncSwitch();
+    syncThemeColor();
+    Arm.retheme();
+    window.clearTimeout(themingT);
+    themingT = window.setTimeout(function () { root.classList.remove('theming'); }, 300);
+  }
+  function cycleMode() { setMode(MODES[(MODES.indexOf(mode()) + 1) % MODES.length]); }
+  radios.forEach(function (b, i) {
+    b.addEventListener('click', function () { setMode(b.getAttribute('data-set')); b.focus(); });
+    b.addEventListener('keydown', function (e) {
+      var j = -1;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') j = (i + 1) % radios.length;
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') j = (i - 1 + radios.length) % radios.length;
+      else if (e.key === 'Home') j = 0;
+      else if (e.key === 'End') j = radios.length - 1;
+      else if (e.key === ' ' || e.key === 'Enter') j = i;
+      if (j < 0) return;
+      e.preventDefault();
+      setMode(radios[j].getAttribute('data-set'));
+      radios[j].focus();
+    });
+  });
+  window.addEventListener('modechange', function () { syncSwitch(); syncThemeColor(); Arm.retheme(); });
+
+  /* ----- Mobile nav ----- */
+  var nav = document.getElementById('nav');
+  var menuBtn = document.getElementById('menu-btn');
+  menuBtn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? 'Close' : 'Menu';
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A' && nav.classList.contains('open')) { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); menuBtn.textContent = 'Menu'; }
+  });
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+  var navTargets = navLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+  var navRaf = 0;
+  function markNav() {
+    navRaf = 0;
+    var y = window.scrollY + 160, best = -1;
+    navTargets.forEach(function (s, i) { if (s && s.offsetTop <= y) best = i; });
+    navLinks.forEach(function (a, i) { if (i === best) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+  }
+  window.addEventListener('scroll', function () { if (!navRaf) navRaf = window.requestAnimationFrame(markNav); }, { passive: true });
+  markNav();
+
+  /* ----- First visit: the one-line gloss ----- */
+  var seen = null;
+  try { seen = localStorage.getItem('tz-seen'); if (!seen) localStorage.setItem('tz-seen', '1'); } catch (e) {}
+  if (!seen) document.getElementById('gloss').hidden = false;
+
+  /* ----- Key-finding toggles, and the lamp wash that follows the pointer inside a card ----- */
+  Array.prototype.forEach.call(document.querySelectorAll('.stat-toggle'), function (btn) {
+    var card = btn.closest('.pub');
+    btn.addEventListener('click', function () {
+      var on = card.classList.toggle('is-open');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.firstElementChild.textContent = on ? '−' : '+';
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.pub'), function (card) {
+    card.addEventListener('pointermove', function (e) {
+      var r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+      card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+    });
+  });
+
+  /* ----- Shortcuts sheet ----- */
+  var sheet = document.getElementById('keys');
+  var keysBtn = document.getElementById('keys-btn');
+  var keysClose = document.getElementById('keys-close');
+  var lastFocus = null;
+  function openSheet() {
+    if (sheet.open) return;
+    lastFocus = document.activeElement;
+    if (typeof sheet.showModal === 'function') sheet.showModal(); else sheet.setAttribute('open', '');
+    keysClose.focus();
+  }
+  function closeSheet() {
+    if (!sheet.open) return;
+    if (typeof sheet.close === 'function') sheet.close(); else sheet.removeAttribute('open');
+  }
+  sheet.addEventListener('close', function () { if (lastFocus && lastFocus.focus) lastFocus.focus(); });
+  keysBtn.addEventListener('click', function () { sheet.open ? closeSheet() : openSheet(); });
+  keysClose.addEventListener('click', closeSheet);
+  sheet.addEventListener('click', function (e) { if (e.target === sheet) closeSheet(); });
+
+  /* =====================================================================
+     THE INSTRUMENT. Instrument frame: X east, Y north, Z zenith. Polar
+     axis P tilted to Berkeley's latitude (37.87°). The scene is yawed 28°
+     and pitched 18° and projected orthographically, so every ring is an
+     ellipse. Three nests: the fixed 六合儀 (horizon, meridian, fixed
+     equator with the hour scale), the 三辰儀 turning about P at the
+     sidereal rate (equator with the du scale and the 28 mansion
+     boundaries, ecliptic with the sun, polar ring), the 四游儀 (double ring
+     with the north-polar-distance scale, the sighting tube). The equator
+     ring's zero is the vernal equinox, so the nest angle is the local
+     sidereal time; diurnal motion is a negative rotation about P. The
+     circle is 365¼ du; the ecliptic sits 24 du (about 23.65°) from the
+     equator, the instrument's own figure. Nothing here draws text.
+     ===================================================================== */
+  var Arm = (function () {
+    var stage = document.getElementById('stage');
+    var cv = document.getElementById('arm');
+    var readout = document.getElementById('stage-readout');
+    var api = { retheme: function () {}, sweep: function () {}, stop: function () {}, sweeping: function () { return false; }, redraw: function () {}, pause: function () {}, resume: function () {} };
+    if (!cv || !cv.getContext) return api;
+    var ctx = cv.getContext('2d');
+    var W = 0, H = 0, RW = 0, dpr = 1, R = 100, cx = 0, cy = 0, groundY = 0, dense = true;   /* RW: the readout's own width, which decides its long or short form */
+    var DU = 365.25, N = 180;
+    var PHI = LAT, YAW = 28, PITCH = 18, OBL = 23.65;
+    var MANSION_A = MANSIONS.map(function (m) { return m.ra * RAD; });
+    var CA = Math.cos(YAW * RAD), SA = Math.sin(YAW * RAD), CB = Math.cos(PITCH * RAD), SB = Math.sin(PITCH * RAD);
+    var P = [0, Math.cos(PHI * RAD), Math.sin(PHI * RAD)];
+    var EAST = [1, 0, 0];
+    var SOUTH = [0, -Math.sin(PHI * RAD), Math.cos(PHI * RAD)];   /* the equator's south point, perpendicular to P */
+    var LAMP = [-0.7071, -0.7071];                                  /* screen direction toward the lamp, upper left */
+    var REST_W = 62;                                                /* the inner ring rests 62° from the meridian */
+    var NPD_MAX = 120;
+    var cur = { nest: 0, w: REST_W, npd: 0 };
+    var live = false, sweeping = false, sweepT0 = 0, sweepBase = 0, SWEEP_MS = 6000;
+    var tw = null, raf = 0, keyT = 0, minuteT = 0, fadeT = 0, virtualMin = null, sky = null, sweepLst = 0;
+
+    function cross(a, b) { return [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]]; }
+    function dot(a, b) { return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]; }
+    function unit(v) { var l = Math.hypot(v[0], v[1], v[2]) || 1; return [v[0] / l, v[1] / l, v[2] / l]; }
+    function mix(a, b, ka, kb) { return [a[0] * ka + b[0] * kb, a[1] * ka + b[1] * kb, a[2] * ka + b[2] * kb]; }
+    function rot(v, k, deg) {   /* Rodrigues: rotate v about unit axis k by deg */
+      var c = Math.cos(deg * RAD), s = Math.sin(deg * RAD), kv = cross(k, v), kd = dot(k, v);
+      return [v[0] * c + kv[0] * s + k[0] * kd * (1 - c), v[1] * c + kv[1] * s + k[1] * kd * (1 - c), v[2] * c + kv[2] * s + k[2] * kd * (1 - c)];
+    }
+    function proj(v) {   /* orthographic; returns screen x, y and depth (positive toward the viewer) */
+      var x1 = v[0] * CA - v[1] * SA, y1 = v[0] * SA + v[1] * CA, z1 = v[2];
+      var y2 = y1 * CB - z1 * SB, z2 = y1 * SB + z1 * CB;
+      return [cx + R * x1, cy - R * z2, -y2];
+    }
+    function nestRot(v) { return rot(v, P, -cur.nest); }   /* diurnal motion is a negative rotation about +P */
+    function ringPts(n, u, r, c) {
+      var w = cross(n, u), pts = [], i, t, cs, sn;
+      for (i = 0; i < N; i++) {
+        t = i * 2 * Math.PI / N; cs = Math.cos(t) * r; sn = Math.sin(t) * r;
+        pts.push(proj([u[0] * cs + w[0] * sn + (c ? c[0] : 0), u[1] * cs + w[1] * sn + (c ? c[1] : 0), u[2] * cs + w[2] * sn + (c ? c[2] : 0)]));
+      }
+      return pts;
+    }
+    function runs(pts) {   /* split a closed sampled ring into front and back polylines, overlapping by one point */
+      var front = [], back = [], run = [pts[0]], sign = pts[0][2] >= 0, i, p, s;
+      for (i = 1; i <= N; i++) {
+        p = pts[i % N]; s = p[2] >= 0;
+        run.push(p);
+        if (s !== sign) { (sign ? front : back).push(run); run = [pts[(i - 1) % N], p]; sign = s; }
+      }
+      (sign ? front : back).push(run);
+      return { front: front, back: back };
+    }
+    function polyline(run) { ctx.beginPath(); ctx.moveTo(run[0][0], run[0][1]); for (var i = 1; i < run.length; i++) ctx.lineTo(run[i][0], run[i][1]); }
+    function normals(run) {   /* outward 2D normals at each point of a run */
+      var out = [], i, p, q, tx, ty, l, nx, ny;
+      for (i = 0; i < run.length; i++) {
+        p = run[Math.max(0, i - 1)]; q = run[Math.min(run.length - 1, i + 1)];
+        tx = q[0] - p[0]; ty = q[1] - p[1]; l = Math.hypot(tx, ty) || 1; nx = -ty / l; ny = tx / l;
+        if (nx * (run[i][0] - cx) + ny * (run[i][1] - cy) < 0) { nx = -nx; ny = -ny; }
+        out.push([nx, ny]);
+      }
+      return out;
+    }
+    function hex(col) { var m = /^#([0-9a-f]{6})$/i.exec(col); if (!m) return null; var n = parseInt(m[1], 16); return [n >> 16, (n >> 8) & 255, n & 255]; }
+    function rgba(col, a) {
+      var h = hex(col); if (h) return 'rgba(' + h[0] + ',' + h[1] + ',' + h[2] + ',' + a.toFixed(3) + ')';
+      var m = /^rgba?\(([^)]+)\)$/i.exec(col);
+      if (m) { var p = m[1].split(',').map(parseFloat); return 'rgba(' + p[0] + ',' + p[1] + ',' + p[2] + ',' + (a * (p.length > 3 ? p[3] : 1)).toFixed(3) + ')'; }
+      return col;
+    }
+    function lerpCol(a, b, k) { var A = hex(a) || [0, 0, 0], B = hex(b) || [0, 0, 0]; return 'rgb(' + Math.round(A[0] + (B[0] - A[0]) * k) + ',' + Math.round(A[1] + (B[1] - A[1]) * k) + ',' + Math.round(A[2] + (B[2] - A[2]) * k) + ')'; }
+
+    function fit() {
+      var r = stage.getBoundingClientRect();
+      W = Math.max(1, Math.round(r.width)); H = Math.max(1, Math.round(r.height));
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      dense = W >= 480;
+      RW = readout.clientWidth || W;
+      R = Math.min(0.42 * (H - 42), 0.30 * W);
+      cx = W / 2; cy = (H - 42) / 2 - 2;
+      groundY = Math.round(cy + R + 8) + 0.5;
+    }
+
+    function drawRing(T, night, n, u, r, c, opts) {
+      opts = opts || {};
+      var pts = ringPts(n, u, r, c), rr = runs(pts), i, j, run, nm, k, lit, p, q, s;
+      /* back halves: a hairline (fainter on phones, where the sphere is small) */
+      ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      ctx.strokeStyle = dense ? T.back : rgba(T.back, 0.66); ctx.lineWidth = 1;
+      for (i = 0; i < rr.back.length; i++) { polyline(rr.back[i]); ctx.stroke(); }
+      if (opts.backOnly) return pts;
+      for (i = 0; i < rr.front.length; i++) {
+        run = rr.front[i]; nm = normals(run);
+        if (night) {
+          /* a bronze band shaded by the lamp, read by its lit rim */
+          for (j = 0; j < run.length - 1; j++) {
+            p = run[j]; q = run[j + 1]; lit = nm[j][0] * LAMP[0] + nm[j][1] * LAMP[1];
+            ctx.strokeStyle = lerpCol(T.bandDark, T.band, 0.5 + 0.5 * lit); ctx.lineWidth = opts.thin ? 3 : 5;
+            ctx.beginPath(); ctx.moveTo(p[0], p[1]); ctx.lineTo(q[0], q[1]); ctx.stroke();
+          }
+          for (j = 0; j < run.length - 1; j++) {
+            p = run[j]; q = run[j + 1]; lit = nm[j][0] * LAMP[0] + nm[j][1] * LAMP[1];
+            k = Math.abs(lit); if (k < 0.06) continue;
+            s = (lit > 0 ? 1 : -1) * (opts.thin ? 1 : 2);
+            ctx.strokeStyle = rgba(T.rim, Math.pow(k, 1.2) * 0.95); ctx.lineWidth = 1;
+            ctx.beginPath(); ctx.moveTo(p[0] + nm[j][0] * s, p[1] + nm[j][1] * s); ctx.lineTo(q[0] + nm[j + 1][0] * s, q[1] + nm[j + 1][1] * s); ctx.stroke();
+          }
+        } else if (dense) {
+          /* the woodcut's double line: two parallel ink strokes 3px apart */
+          var off = opts.thin ? 1 : 1.5;
+          ctx.strokeStyle = T.ink; ctx.lineWidth = opts.thin ? 1 : 1.25;
+          for (s = -1; s <= 1; s += 2) {
+            ctx.beginPath();
+            for (j = 0; j < run.length; j++) { p = run[j]; if (j) ctx.lineTo(p[0] + nm[j][0] * off * s, p[1] + nm[j][1] * off * s); else ctx.moveTo(p[0] + nm[j][0] * off * s, p[1] + nm[j][1] * off * s); }
+            ctx.stroke();
+          }
+        } else {
+          /* on a phone the double line would close up, so each front half is one ink stroke */
+          ctx.strokeStyle = T.ink; ctx.lineWidth = opts.thin ? 1 : 1.25;
+          polyline(run); ctx.stroke();
+        }
+      }
+      return pts;
+    }
+    function drawTicks(n, u, r0, r1, angles, col, width, dotR, dotFill) {   /* graduations on a ring centred on the origin: strokes from radius r0 to r1 (units of R) at the given angles, front side only; optionally a small dot just past the r1 tip, drawn only where the tick stands clearly on the near side, so the dots never pile up at the limb where neighbouring ticks foreshorten together */
+      var w = cross(n, u), i, t, c, s, dx, dy, dz, a, b, l, dots = [];
+      ctx.strokeStyle = col; ctx.fillStyle = col; ctx.lineWidth = width || 1; ctx.lineCap = 'butt';
+      ctx.beginPath();
+      for (i = 0; i < angles.length; i++) {
+        t = angles[i]; c = Math.cos(t); s = Math.sin(t);
+        dx = u[0] * c + w[0] * s; dy = u[1] * c + w[1] * s; dz = u[2] * c + w[2] * s;
+        a = proj([dx * r0, dy * r0, dz * r0]);
+        if (a[2] < 0) continue;
+        b = proj([dx * r1, dy * r1, dz * r1]);
+        ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]);
+        if (dotR && a[2] > 0.18) { l = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1; dots.push([b[0] + (b[0] - a[0]) / l * (dotR + 1), b[1] + (b[1] - a[1]) / l * (dotR + 1)]); }
+      }
+      ctx.stroke();
+      if (dotR) {
+        ctx.lineWidth = 1;
+        for (i = 0; i < dots.length; i++) { ctx.beginPath(); ctx.arc(dots[i][0], dots[i][1], dotR, 0, 2 * Math.PI); if (dotFill) ctx.fill(); else ctx.stroke(); }
+      }
+    }
+    function fillSmallRing(T, night, n, c, r) {   /* a pivot cap or the eyepiece: a small projected circle in the ring's own material (band at night, bare paper on the woodcuts), so it reads as hardware and leaves the sun the one accented mark */
+      var w = cross(n, Math.abs(n[2]) < 0.9 ? [0, 0, 1] : [1, 0, 0]); w = unit(w); var u = cross(w, n), i, t, p;
+      ctx.beginPath();
+      for (i = 0; i < 28; i++) { t = i * 2 * Math.PI / 28; p = proj([c[0] + (u[0] * Math.cos(t) + w[0] * Math.sin(t)) * r, c[1] + (u[1] * Math.cos(t) + w[1] * Math.sin(t)) * r, c[2] + (u[2] * Math.cos(t) + w[2] * Math.sin(t)) * r]); if (i) ctx.lineTo(p[0], p[1]); else ctx.moveTo(p[0], p[1]); }
+      ctx.closePath();
+      ctx.fillStyle = night ? T.band : T.bg; ctx.fill();
+      ctx.strokeStyle = night ? T.rim : T.ink; ctx.lineWidth = 1; ctx.stroke();
+    }
+    function duAngles(step, offset) { var out = [], d; for (d = offset || 0; d < DU; d += step) out.push(d / DU * 2 * Math.PI); return out; }
+
+    function tubeDir() { var e = rot(SOUTH, P, -cur.w); var th = cur.npd / DU * 360; return { e: e, d: unit(mix(P, e, Math.cos(th * RAD), Math.sin(th * RAD))) }; }
+    function tubeDu() {   /* the du on the turning middle equator ring under the tube's plane */
+      var uM = nestRot(SOUTH), wM = cross(P, uM), e = rot(SOUTH, P, -cur.w);
+      var a = Math.atan2(dot(e, wM), dot(e, uM)) / (2 * Math.PI) * DU;
+      return ((a % DU) + DU) % DU;
+    }
+    function mansionOfDu(du) { return mansionOfRA(du / DU * 360); }
+    function eclVec(lon) {   /* a point of the ecliptic at longitude lon, in the turning middle nest */
+      var cl = Math.cos(lon * RAD), sl = Math.sin(lon * RAD), ce = Math.cos(OBL * RAD), se = Math.sin(OBL * RAD);
+      return nestRot([SOUTH[0] * cl + (EAST[0] * ce + P[0] * se) * sl, SOUTH[1] * cl + (EAST[1] * ce + P[1] * se) * sl, SOUTH[2] * cl + (EAST[2] * ce + P[2] * se) * sl]);
+    }
+    function sunDisc(T, night, p, front) {   /* the sun on the ecliptic ring, drawn as its sign ☉: a filled disc inside a thin ring, the one accented mark on the sphere; the same sign, faded, when it stands behind the sphere, so it is always there to point to */
+      ctx.beginPath(); ctx.arc(p[0], p[1], 3, 0, 2 * Math.PI); ctx.fillStyle = front ? T.hot : rgba(T.hot, 0.45); ctx.fill();
+      ctx.beginPath(); ctx.arc(p[0], p[1], 7.5, 0, 2 * Math.PI); ctx.strokeStyle = front ? T.hot : rgba(T.rim, 0.55); ctx.lineWidth = 1.25; ctx.stroke();
+    }
+
+    /* ----- The plate at the centre. In the 渾天 hun tian model the heavens are an egg and the earth sits inside them like the yolk; the sighting tube turns about the centre, so every line of sight passes through it, and that point, where the model puts the earth, is where the portrait sits. The plate is drawn only once the photo, the hidden <img> in the hero, has loaded and decoded (naturalWidth > 0); a missing or broken file draws nothing at all, no disc and no rim, and the axle and the tube then run straight through the centre. A disc of 0.22 R (0.19 R on phones), clipped: the photo, desaturated by a 'saturation' blend (no ctx.filter, which Safari gained only in 18), then made a true duotone by two fills, screen with --pt-shadow and multiply with --pt-light, so result = lerp(shadow × light, light, luminance): highlights reach the paper (or the lit bronze), shadows the ink (or the dark of the band). Bronze alone then adds at most 12% white from the lamp side. Nothing reads pixels back (a file:// image would taint the canvas). ----- */
+    var pt = document.getElementById('portrait'), ptReady = false, PT_R = 0.22;   /* the plate's radius in units of R */
+    function plateR() { return ptReady ? (dense ? PT_R : 0.19) * R : 0; }   /* a shade smaller on phones, where the rings are single hairlines and a 0.22 R plate outweighs them; no plate at all without the photo */
+    function ptSync() { ptReady = !!(pt && pt.complete && pt.naturalWidth > 0); }
+    if (pt) {
+      pt.addEventListener('load', function () { ptSync(); draw(); });
+      pt.addEventListener('error', function () { ptReady = false; draw(); });
+      ptSync();
+    }
+    function exitPt(near) {   /* where a bar through the centre leaves the plate on its way to its near end, in screen space, so the axle and the tube thread the plate instead of crossing the face; the centre itself when there is no plate; null when the near end sits inside the plate (the bar then points at the viewer and only its cap shows) */
+      var dx = near[0] - cx, dy = near[1] - cy, l = Math.hypot(dx, dy), r = plateR();
+      return l > r + 1 ? [cx + dx / l * r, cy + dy / l * r] : null;
+    }
+    function portrait(T, night) {
+      if (!ptReady) return;   /* no photo, no plate: nothing is drawn at the centre */
+      var r = plateR(), d = 2 * r, i, t0, t1, nx, ny, lit, lines;
+      var sw = pt.naturalWidth, sh = pt.naturalHeight, s = Math.min(sw, sh);
+      ctx.save();
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, 2 * Math.PI); ctx.closePath(); ctx.clip();
+      ctx.imageSmoothingQuality = 'high';   /* the 800 px source lands in a 40 to 55 px disc; bilinear alone would speckle a real face */
+      try { ctx.drawImage(pt, (sw - s) / 2, (sh - s) / 2, s, s, cx - r, cy - r, d, d); }   /* the centred square of the photo, so a non-square file still fills the disc */
+      catch (e) { ctx.restore(); ptReady = false; window.setTimeout(draw, 0); return; }   /* a broken decode: give the plate up and redraw without it */
+      ctx.globalCompositeOperation = 'saturation'; ctx.fillStyle = '#808080'; ctx.fillRect(cx - r, cy - r, d, d);   /* grey, keeping the photo's luminosity */
+      ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = T.ptShadow; ctx.fillRect(cx - r, cy - r, d, d);
+      ctx.globalCompositeOperation = 'multiply'; ctx.fillStyle = T.ptLight; ctx.fillRect(cx - r, cy - r, d, d);
+      ctx.globalCompositeOperation = 'source-over';
+      if (night && T.ptLift > 0) {
+        var lg = ctx.createLinearGradient(cx + LAMP[0] * r, cy + LAMP[1] * r, cx - LAMP[0] * r, cy - LAMP[1] * r);
+        lg.addColorStop(0, 'rgba(255,255,255,' + T.ptLift.toFixed(3) + ')'); lg.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = lg; ctx.fillRect(cx - r, cy - r, d, d);
+      }
+      ctx.restore();
+      /* the rim, in the rings' own line language */
+      ctx.lineCap = 'butt';
+      if (night) {
+        /* Bronze: a 2px edge shaded by the lamp so the plate has the rings' thickness, then the lit rim on the lamp side and the band's dark on the far side, segment by segment as drawRing does */
+        for (i = 0; i < 48; i++) {
+          t0 = i * Math.PI / 24; t1 = t0 + Math.PI / 24; nx = Math.cos(t0 + Math.PI / 48); ny = Math.sin(t0 + Math.PI / 48); lit = nx * LAMP[0] + ny * LAMP[1];
+          ctx.strokeStyle = lerpCol(T.bandDark, T.band, 0.5 + 0.5 * lit); ctx.lineWidth = 2;
+          ctx.beginPath(); ctx.arc(cx, cy, r + 1, t0 - 0.02, t1 + 0.02); ctx.stroke();
+          ctx.strokeStyle = lit > 0 ? rgba(T.ptRim, Math.pow(lit, 1.2) * 0.95) : T.bandDark; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.arc(cx, cy, r + 2.5, t0 - 0.02, t1 + 0.02); ctx.stroke();
+        }
+      } else {
+        /* paper: the woodcut's double line where the rings are double (dense), one line where they are single, both outside the disc with paper between them, 3px apart as in drawRing */
+        lines = dense ? 2 : 1;
+        ctx.strokeStyle = T.ptRim; ctx.lineWidth = 1.25;
+        for (i = 0; i < lines; i++) { ctx.beginPath(); ctx.arc(cx, cy, r + 1.5 + 3 * i, 0, 2 * Math.PI); ctx.stroke(); }
+      }
+    }
+    function drawTube(T, night, p, q, nx, ny) {   /* one half of the sighting tube, from p to q, with the tube's screen normal (nx, ny): a bronze bar with its lit edge, or the woodcut's two hollow walls 5px apart */
+      if (night) {
+        ctx.strokeStyle = T.band; ctx.lineWidth = 4; ctx.lineCap = 'butt';
+        ctx.beginPath(); ctx.moveTo(p[0], p[1]); ctx.lineTo(q[0], q[1]); ctx.stroke();
+        var lit = nx * LAMP[0] + ny * LAMP[1], s = lit > 0 ? 1.5 : -1.5;
+        ctx.strokeStyle = rgba(T.rim, 0.35 + 0.6 * Math.abs(lit)); ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(p[0] + nx * s, p[1] + ny * s); ctx.lineTo(q[0] + nx * s, q[1] + ny * s); ctx.stroke();
+      } else {
+        ctx.strokeStyle = T.ink; ctx.lineWidth = 1; ctx.lineCap = 'butt';
+        for (var i = -1; i <= 1; i += 2) { ctx.beginPath(); ctx.moveTo(p[0] + nx * 2.5 * i, p[1] + ny * 2.5 * i); ctx.lineTo(q[0] + nx * 2.5 * i, q[1] + ny * 2.5 * i); ctx.stroke(); }
+      }
+    }
+
+    function draw() {
+      var m = mode(), night = (m === 'night'), i;
+      var T = {
+        band: token('--ar-band') || '#3b3022', bandDark: token('--ar-band-dark') || '#241d14', rim: token('--ar-rim') || '#d8b26e',
+        ink: token('--ar-ink') || '#d8b26e', back: token('--ar-back') || 'rgba(216,178,110,.22)', tick: token('--ar-tick') || '#c9a96a',
+        axis: token('--ar-axis') || '#8a7148', hot: token('--ar-hot') || '#f3e0b3', ground: token('--ar-ground') || '#35332e',
+        bg: token('--bg') || '#070706', lamp: token('--ar-lamp') || 'transparent',
+        ptShadow: token('--pt-shadow') || (night ? '#241d14' : '#1f1b17'), ptLight: token('--pt-light') || '', ptLift: parseFloat(token('--pt-lift')), ptRim: token('--pt-rim') || '#d8b26e'
+      };
+      if (!T.ptLight) T.ptLight = night ? '#c49a5c' : T.bg;
+      if (isNaN(T.ptLift)) T.ptLift = night ? 0.12 : 0; T.ptLift = night ? clamp(T.ptLift, 0, 0.12) : 0;   /* the lamp's lift is Bronze's alone, never more than 12% white */
+      ctx.clearRect(0, 0, W, H);
+      sky = skyOf(new Date());
+
+      /* 0 · the floor: at night, the lamp's pool on the ground beside the sphere, a low wide ellipse sitting on the ground hairline; nothing on paper */
+      if (night && T.lamp && T.lamp !== 'transparent') {
+        var lx = cx - 0.6 * R, lrx = 0.9 * R, lry = 0.18 * R;
+        ctx.save(); ctx.translate(lx, groundY); ctx.scale(1, lry / lrx);
+        var rg = ctx.createRadialGradient(0, 0, 0, 0, 0, lrx);
+        rg.addColorStop(0, T.lamp); rg.addColorStop(1, rgba(T.lamp, 0));
+        ctx.fillStyle = rg; ctx.fillRect(-lrx, -lrx, 2 * lrx, 2 * lrx); ctx.restore();
+      }
+
+      /* 1 · the stand: two posts from the horizon ring and one from the south pivot, down to the ground hairline */
+      var pivS = mix(P, P, -1.06, 0), pivN = mix(P, P, 1.06, 0);
+      var post = [proj([Math.sin(40 * RAD), -Math.cos(40 * RAD), 0]), proj([-Math.sin(40 * RAD), -Math.cos(40 * RAD), 0]), proj(pivS)];
+      ctx.strokeStyle = T.axis; ctx.lineWidth = 1; ctx.lineCap = 'butt';
+      for (i = 0; i < 3; i++) { var px = Math.round(post[i][0]) + 0.5; ctx.beginPath(); ctx.moveTo(px, post[i][1]); ctx.lineTo(px, groundY); ctx.stroke(); }
+      ctx.strokeStyle = T.ground; ctx.beginPath(); ctx.moveTo(cx - 1.5 * R, groundY); ctx.lineTo(cx + 1.5 * R, groundY); ctx.stroke();
+
+      /* frames */
+      var uMid = nestRot(SOUTH);                                 /* the middle equator's zero, turning with the clock */
+      var nEcl = nestRot(rot(P, SOUTH, OBL)), uEcl = uMid;     /* the ecliptic crosses the equator at the ring's zero, the vernal equinox */
+      var sunV = eclVec(sky.sunLon), sunP = proj([sunV[0] * 0.86, sunV[1] * 0.86, sunV[2] * 0.86]), sunFront = sunP[2] >= 0;
+      var nPol = nestRot(EAST);
+      var tb = tubeDir(), nIn = unit(cross(P, tb.e));
+      var rIn = 0.72, rIn2 = 0.72 + 4 / R;
+      /* the sighting tube's two ends and its screen normal; the tube passes through the centre, so its far half is drawn behind the plate and its near half from the plate's edge outward */
+      var tEnd = [proj(mix(tb.d, tb.d, 0.68, 0)), proj(mix(tb.d, tb.d, -0.68, 0))], tFar = tEnd[0][2] < tEnd[1][2] ? tEnd[0] : tEnd[1], tNear = tFar === tEnd[0] ? tEnd[1] : tEnd[0], ctr = [cx, cy];
+      var eyeEnd = (mix(tb.d, tb.d, 0.68, 0)[2] < mix(tb.d, tb.d, -0.68, 0)[2]) ? mix(tb.d, tb.d, 0.68, 0) : mix(tb.d, tb.d, -0.68, 0);
+      var tdx = tEnd[1][0] - tEnd[0][0], tdy = tEnd[1][1] - tEnd[0][1], tl = Math.hypot(tdx, tdy) || 1, tnx = -tdy / tl, tny = tdx / tl;
+
+      /* 2 · back halves of everything, innermost first */
+      var ringsBack = [
+        [nIn, P, rIn], [nIn, P, rIn2],
+        [P, uMid, 0.86], [nEcl, uEcl, 0.86], [nPol, P, 0.86],
+        [[0, 0, 1], [0, 1, 0], 1], [EAST, [0, 0, 1], 1], [P, SOUTH, 1]
+      ];
+      for (i = 0; i < ringsBack.length; i++) drawRing(T, night, ringsBack[i][0], ringsBack[i][1], ringsBack[i][2], null, { backOnly: true });
+      if (!sunFront) sunDisc(T, night, sunP, false);
+
+      /* 3 · the far halves of the polar axis and the sighting tube, from the far pole to the centre; then the plate with the portrait at the centre, over them and over every back half; then the near half of the axis from where it leaves the plate, never across the face, and the north pivot */
+      var a0 = proj(pivS), a1 = proj(pivN), aFar = a0[2] < a1[2] ? a0 : a1, aNear = aFar === a0 ? a1 : a0, aExit = exitPt(aNear), tExit = exitPt(tNear);
+      ctx.strokeStyle = T.axis; ctx.lineWidth = night ? 1.5 : 1; ctx.lineCap = 'round';
+      ctx.beginPath(); ctx.moveTo(aFar[0], aFar[1]); ctx.lineTo(cx, cy); ctx.stroke();
+      drawTube(T, night, tFar, ctr, tnx, tny);
+      portrait(T, night);
+      if (aExit) { ctx.strokeStyle = T.axis; ctx.lineWidth = night ? 1.5 : 1; ctx.lineCap = 'round'; ctx.beginPath(); ctx.moveTo(aExit[0], aExit[1]); ctx.lineTo(aNear[0], aNear[1]); ctx.stroke(); }
+      fillSmallRing(T, night, P, pivN, 0.03);
+
+      /* 4 · the inner nest: the double ring with its north-polar-distance scale (not on phones), and the near half of the sighting tube from where it leaves the plate (hollow in the woodcut: two 1px walls 5px apart) with its eyepiece */
+      drawRing(T, night, nIn, P, rIn, null, { thin: true });
+      drawRing(T, night, nIn, P, rIn2, null, { thin: true });
+      if (dense) drawTicks(nIn, P, rIn2, rIn2 + 5 / R, duAngles(10), T.tick, 1);
+      if (tExit) drawTube(T, night, tExit, tNear, tnx, tny);
+      fillSmallRing(T, night, tb.d, eyeEnd, 0.035);
+
+      /* 5 · the middle nest: the equator with three classes of graduation, each its own geometry: 10-du marks as short inward ticks off the band's inner edge (not on phones); the twenty-eight mansion boundaries as the only ticks that cross the band, all alike, so the sun stays the one accented mark. Then the ecliptic with the sun, and the polar ring */
+      drawRing(T, night, nPol, P, 0.86);
+      drawRing(T, night, nEcl, uEcl, 0.86);
+      drawRing(T, night, P, uMid, 0.86);
+      if (dense) drawTicks(P, uMid, 0.86 - 2.5 / R, 0.86 - 5.5 / R, duAngles(10), T.tick, 1);
+      var du = live ? tubeDu() : -1;
+      drawTicks(P, uMid, 0.86 - 5 / R, 0.86 + 5 / R, MANSION_A, T.tick, 1);
+      if (sunFront) sunDisc(T, night, sunP, true);
+
+      /* 6 · the outer nest: horizon, meridian, and the fixed equator ring with twelve double-hours and, where there is room, one hundred ke */
+      drawRing(T, night, P, SOUTH, 1);
+      var hourA = [], keA = [];
+      for (i = 0; i < 12; i++) hourA.push(i * Math.PI / 6);
+      if (dense) for (i = 0; i < 100; i++) keA.push(i * 2 * Math.PI / 100);
+      drawTicks(P, SOUTH, 1, 1 + 3 / R, keA, T.tick, 1);
+      drawTicks(P, SOUTH, 1, 1 + 7 / R, hourA, T.tick, 1);
+      drawRing(T, night, EAST, [0, 0, 1], 1);
+      drawRing(T, night, [0, 0, 1], [0, 1, 0], 1);
+      fillSmallRing(T, night, P, pivS, 0.04);
+
+      /* readout: HTML, every number a du or an hour and ke. At rest one line (two on phones); the sidereal value joins it only while the water clock runs; when the tube is aimed, the two du lines */
+      var narrow = RW < 620, l1, l2 = '', txt, c, sm = sky.m;   /* the long form is about 590px of mono; below that the readout would ellipsize */
+      if (live) {
+        var npd = Math.round(cur.npd), edu = Math.round(du) % Math.round(DU), mi = mansionOfDu(du), M = MANSIONS[mi], into = Math.round(((du - M.du) % DU + DU) % DU);
+        l1 = cjk('去極') + ' qùjí ' + npd + ' du · ' + (narrow ? '' : cjk('入宿') + ' rùxiù ') + cjk(M.ch) + ' ' + M.py + ' ' + into + ' du';
+        l2 = edu + ' du from the equinox' + (narrow ? '' : ' (modern origin)');
+        stage.setAttribute('aria-valuenow', String(npd));
+        stage.setAttribute('aria-valuetext', 'north polar distance ' + npd + ' du, ' + into + ' du into the mansion ' + M.py + ' (' + M.en + '), ' + edu + ' du along the equator from the vernal equinox');
+      } else {
+        c = clockOf(virtualMin === null ? nowMin() : virtualMin);
+        var sunTxt = 'sun in ' + cjk(sm.ch) + ' ' + sm.py + ' (approx.)', sidTxt = 'sidereal ' + hmOf(sweeping ? norm360(cur.nest) : sky.lst);
+        if (narrow) { l1 = clockHTML(c, 'short') + ' · Berkeley'; l2 = sunTxt + (sweeping ? ' · ' + sidTxt : ''); }
+        else { l1 = clockHTML(c, 'mid') + ' · ' + sunTxt + ' · Berkeley local time'; if (sweeping) l2 = sidTxt; }
+        stage.setAttribute('aria-valuenow', '0');
+        stage.setAttribute('aria-valuetext', 'north polar distance 0 du, on the pole');
+      }
+      txt = '<span class="l">' + l1 + '</span>' + (l2 ? '<span class="l">' + l2 + '</span>' : '');
+      if (readout.getAttribute('data-txt') !== txt) { readout.innerHTML = txt; readout.setAttribute('data-txt', txt); }
+    }
+
+    /* ----- Animation: one rAF chain only while something moves; at rest the clock redraws once a minute ----- */
+    function frame(ts) {
+      raf = 0;
+      if (sweeping) {
+        var k = clamp((ts - sweepT0) / SWEEP_MS, 0, 1);
+        virtualMin = sweepBase + SID_DAY_MIN * k;
+        cur.nest = sweepLst + 360 * k;
+        draw();
+        if (k >= 1) { endSweep(); return; }
+        raf = window.requestAnimationFrame(frame);
+        return;
+      }
+      if (tw) {
+        var q = tw.dur > 0 ? clamp((ts - tw.t0) / tw.dur, 0, 1) : 1, e = easeOut(q);
+        cur.nest = tw.from.nest + (tw.to.nest - tw.from.nest) * e;
+        cur.w = tw.from.w + (tw.to.w - tw.from.w) * e;
+        cur.npd = tw.from.npd + (tw.to.npd - tw.from.npd) * e;
+        if (q >= 1) tw = null;
+      }
+      draw();
+      if (tw) raf = window.requestAnimationFrame(frame);
+    }
+    function schedule() { if (!raf) raf = window.requestAnimationFrame(frame); }
+    function tweenTo(target, ms) {
+      tw = { from: { nest: cur.nest, w: cur.w, npd: cur.npd }, to: { nest: target.nest, w: target.w, npd: target.npd }, dur: reduced ? 0 : ms, t0: performance.now() };
+      /* shortest way round for the ring angle */
+      var d = tw.to.w - tw.from.w; if (d > 180) tw.to.w -= 360; if (d < -180) tw.to.w += 360;
+      schedule();
+    }
+    function nestNow() { return skyOf(new Date()).lst; }   /* the nest angle is Berkeley's local sidereal time */
+    function minuteTick() {
+      window.clearTimeout(minuteT);
+      if (!sweeping && !tw) { cur.nest = nestNow(); draw(); }
+      var d = new Date();
+      minuteT = window.setTimeout(minuteTick, (60 - d.getSeconds()) * 1000 + 50);
+    }
+
+    /* ----- Sighting: pointer x turns the inner ring about the polar axis, pointer y sets the north polar distance ----- */
+    function setLive(w, npd) {
+      tw = null; live = true;
+      cur.w = ((w % 360) + 360) % 360; cur.npd = clamp(npd, 0, NPD_MAX);
+      schedule();
+    }
+    function release() {
+      if (!live) return;
+      live = false;
+      tweenTo({ nest: cur.nest, w: REST_W, npd: 0 }, 400);
+    }
+    function aimFrom(e) {
+      var r = stage.getBoundingClientRect();
+      var fx = clamp((e.clientX - r.left) / r.width, 0, 1), fy = clamp((e.clientY - r.top) / r.height, 0, 1);
+      setLive(REST_W + (fx - 0.5) * 360, fy * NPD_MAX);
+    }
+    /* Aiming needs intent: a press aims at once; a hover aims after 150 ms inside the stage, so a pointer crossing the hero on its way elsewhere leaves the sphere at rest */
+    var dwellT = 0, armed = false, lastPt = null;
+    stage.addEventListener('pointerenter', function (e) {
+      if (sweeping) return;
+      lastPt = e; window.clearTimeout(dwellT);
+      dwellT = window.setTimeout(function () { armed = true; if (lastPt) aimFrom(lastPt); }, 150);
+    });
+    stage.addEventListener('pointermove', function (e) { if (sweeping) return; lastPt = e; if (armed) aimFrom(e); });
+    stage.addEventListener('pointerdown', function (e) { if (sweeping) return; window.clearTimeout(dwellT); armed = true; aimFrom(e); });
+    ['pointerleave', 'pointercancel'].forEach(function (ev) { stage.addEventListener(ev, function () { window.clearTimeout(dwellT); armed = false; lastPt = null; if (!sweeping) release(); }); });
+    stage.addEventListener('pointerup', function () { if (!sweeping) release(); });
+    stage.addEventListener('keydown', function (e) {
+      if (sweeping) return;
+      var w = cur.w, npd = cur.npd, hit = true;
+      if (e.key === 'ArrowRight') w += e.shiftKey ? 1 : 5;
+      else if (e.key === 'ArrowLeft') w -= e.shiftKey ? 1 : 5;
+      else if (e.key === 'ArrowUp') npd -= e.shiftKey ? 1 : 5;
+      else if (e.key === 'ArrowDown') npd += e.shiftKey ? 1 : 5;
+      else if (e.key === 'Home') { w = REST_W; npd = 0; }
+      else if (e.key === 'Escape') { release(); return; }
+      else hit = false;
+      if (!hit) return;
+      e.preventDefault();
+      setLive(w, npd);
+      window.clearTimeout(keyT);
+      keyT = window.setTimeout(release, 2500);
+    });
+    stage.addEventListener('blur', function () { if (!sweeping) release(); });
+
+    /* ----- The water clock runs: the middle nest turns through one sidereal day in six seconds while the clock labels run, then returns to now. Esc, and any theme change, end it at the present minute. Under reduced motion there is no sweep: the sphere jumps to now ----- */
+    function startSweep() {
+      if (sweeping) return;
+      live = false; tw = null;
+      if (reduced) { virtualMin = null; cur.nest = nestNow(); draw(); return; }
+      sweeping = true;
+      sweepBase = nowMin(); sweepLst = nestNow(); sweepT0 = performance.now();
+      schedule();
+    }
+    function endSweep() {
+      if (!sweeping) return;
+      sweeping = false; virtualMin = null;
+      cur.nest = nestNow();
+      draw();
+    }
+    api.sweep = startSweep;
+    api.stop = endSweep;
+    api.sweeping = function () { return sweeping; };
+    api.state = function () {   /* the numbers behind the drawing, for checking against an independent computation */
+      var k = skyOf(new Date());
+      return { jd: k.jd, gmst: k.gmst, lst: k.lst, sunLon: k.sunLon, sunRA: k.sunRA, mansion: k.m.ch + ' ' + k.m.py, nest: cur.nest, lat: LAT, lon: LON, berkeleyMin: nowMin(), readout: readout.textContent, portrait: ptReady, portraitR: plateR(), centre: [cx, cy] };
+    };
+    api.redraw = function () { fit(); draw(); };
+    api.pause = function () { window.clearTimeout(minuteT); };                       /* a hidden tab: no minute timer */
+    api.resume = function () { if (tw) tw.to.nest = nestNow(); minuteTick(); };     /* back: redraw at the present minute at once */
+    api.retheme = function () {
+      endSweep();
+      if (reduced) { draw(); return; }
+      cv.classList.add('fade');
+      window.clearTimeout(fadeT);
+      fadeT = window.setTimeout(function () { draw(); cv.classList.remove('fade'); }, 120);
+    };
+
+    window.addEventListener('resize', function () { fit(); draw(); });
+    fit();
+    /* on load the middle nest eases into place from 40° behind the present minute */
+    cur.nest = nestNow() - 40;
+    tweenTo({ nest: nestNow(), w: REST_W, npd: 0 }, 900);
+    if (reduced) { tw = null; cur.nest = nestNow(); draw(); }
+    minuteTick();
+    return api;
+  })();
+  syncSwitch();
+  window.armState = Arm.state;
+  document.getElementById('clock-btn').addEventListener('click', Arm.sweep);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { Arm.redraw(); });
+
+  /* ----- A hidden tab: end the sweep and stop the minute timer; on return the readout is redrawn at the present minute before the next tick ----- */
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) { Arm.stop(); Arm.pause(); }
+    else { Arm.resume(); }
+  });
+
+  /* ----- Global keys: t, w, ?, Esc ----- */
+  document.addEventListener('keydown', function (e) {
+    var el = e.target;
+    var typing = el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
+    if (e.key === 'Escape') {
+      if (sheet.open) { closeSheet(); return; }
+      if (Arm.sweeping()) { Arm.stop(); return; }
+      if (nav.classList.contains('open')) { menuBtn.click(); }
+      return;
+    }
+    if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === '?') { e.preventDefault(); sheet.open ? closeSheet() : openSheet(); return; }
+    if (sheet.open) return;
+    if (e.key === 't' || e.key === 'T') { cycleMode(); return; }
+    if (e.key === 'w' || e.key === 'W') { Arm.sweep(); return; }
+  });
+})();
+</script>
 </body>
 </html>
